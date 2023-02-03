@@ -8241,27 +8241,27 @@
 	    margin: 2em 0 2em 0;
 	}
 	.content2 {
-		color: #232121;
-		text-align: justify;
+	    color: #232121;
+	    text-align: justify;
 	}
 
 	.content-highlight {
-		background: #FFC107;
-		color: #ffffff;
-		box-shadow: .5em 0 0 #FFC107, -.5em 0 0 #FFC107;
+	    background: #FFC107;
+	    color: #ffffff;
+	    box-shadow: .5em 0 0 #FFC107, -.5em 0 0 #FFC107;
 	}
 	.content-sent {
-		font-weight: bold;
-		font-style: italic;
+	    font-weight: bold;
+	    font-style: italic;
 	}
-  .content-keywords {
-  	font-weight: bolder;
-  	color: var(--theme);
-  }
-  .content-keywords2 {
-  	font-weight: bolder;
-  	color: black
-  }
+	.content-keywords {
+	    font-weight: bolder;
+	    color: var(--theme);
+	}
+	.content-keywords2 {
+	    font-weight: bolder;
+	    color: black
+	}
 	.features2 p {
 	    font-size: 1rem; 
 	    padding: 1em 0 0 0.5em;
