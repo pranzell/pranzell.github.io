@@ -30,56 +30,6 @@
 		if (browser.name == 'ie')
 			$body.addClass('is-ie');
 
-	// Preloader Effect.
-		$(document).ready(function() {
-			window.setTimeout(function() {
-				$preload.fadeOut();
-				$body.addClass('is-preload');
-			}, 2000);
-		});
-
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 1800);
-		});
-
-	// Progress Bar.
-		$(window).scroll(function () {
-			var s = $(window).scrollTop(),
-			    d = $(document).height(),
-			    c = $(window).height();
-			    scrollPercent = (s / (d-c)) * 100;
-			    var position = scrollPercent;
-
-			$("#progressbar").attr('value', position);
-		});
-
-	// Mouse Scroller (easy).
-		$(document).ready(function() {
-			$('a.scroll-link').click(function(e){
-				e.preventDefault();
-				$id = $(this).attr('href');
-				$('body,html').animate({
-					scrollTop: $($id).offset().top + 2
-				}, 750);
-			});
-		});
-
-	// Forms.
-
-		// Hack: Activate non-input submits.
-			$('form').on('click', '.submit', function(event) {
-
-				// Stop propagation, default.
-					event.stopPropagation();
-					event.preventDefault();
-
-				// Submit form.
-					$(this).parents('form').submit();
-
-			});
-
 	// Sidebar.
 		if ($sidebar.length > 0) {
 
@@ -151,7 +101,7 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly({
-			speed: 1000,
+			speed: 800,
 			offset: function() {
 
 				// If <=large, >small, and sidebar is present, use its height as the offset.

@@ -1,10 +1,10 @@
 /*
 	-------------------------------------------------------------
-	Pranjal Pathak Portfolio hosted on GitHub, Inc.
-	
 	GNU GENERAL PUBLIC LICENSE
-	Version 3, 29 June 2007
+	CO.: PRANJAL PATHAK
+	Version 5.9, 28 Dec 2022
 	Copyright (C). 2007 Free Software Foundation, Inc.
+	- The above details should be cited while copying contents.
 	-------------------------------------------------------------
 */
 
@@ -15,10 +15,6 @@
 @font-face { font-family: PoppinsM; src: url('../webfonts/Poppins-Medium.otf'); } 
 @font-face { font-family: PoppinsL; src: url('../webfonts/Poppins-Light.otf'); }
 @font-face { font-family: PoppinsT; src: url('../webfonts/Poppins-Thin.otf'); } 
-
-
-
-
 @font-face { font-family: Koliko; src: url('../webfonts/koliko.ttf'); } 
 @font-face { font-family: CovesL; src: url('../webfonts/CovesL.otf'); } 
 @font-face { font-family: CovesB; src: url('../webfonts/CovesB.otf'); } 
@@ -1969,6 +1965,7 @@
 	.cursor-pointer {
 		cursor: pointer;
 	}
+
 
 /* MOBILE MENU
 -------------------------------------------- */
@@ -6418,7 +6415,7 @@
 -------------------------------------------- */
 	
 	#social-bar {
-		 display: table-cell;
+		 display: block;
 		 vertical-align: middle;
 		 text-align: center;
 		 font-size: 1.08em;
@@ -8179,6 +8176,157 @@
 	.map {
 		width: 100%;
 	}
+
+
+
+
+/* PAGE 2 
+-------------------------------------------- */
+	
+	.blogsection {
+	    color: black;
+	}
+
+	.wrapper.style10 {
+      background-color: white;
+      height: 100vh;
+      font-family: Open Sans;
+  }
+  
+  .wrapper.style10.p {
+      color: black;
+  }
+  
+  .style10 {
+  	height: 100%;
+  }
+
+
+  #detailsbox {
+  	padding: 1em 0 1em 0.1em;
+  	margin-top: 1em;
+	  display: flex;
+	  flex-wrap: wrap;
+	  width: 500px;
+	  gap: 10px;
+	}
+	.boxitem-title {
+		color: #969da8; 
+		font-size: 0.75rem; 
+		line-height: 1rem;
+	}
+	.boxitem-stat {
+		color: black; 
+		font-size: 0.90rem; 
+		line-height: 1.5rem;
+	}
+
+	.boxitem {
+	  width: 100px;
+	  height: 50px;
+	  border-right: 0.5px #e5e7eb solid;
+	}
+
+  .features2 {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-radius: 0.25em;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    background-color: #f8f8f8;
+    margin: 1em 0 2em 0;
+	}
+
+	.features2 p {
+		font-size: 1rem; 
+		padding: 1em 0 0 0.5em;
+	}
+
+	.title-left2 {
+    font-size: 1.75rem;
+    color: black;
+    position: relative;
+    text-shadow: 0 0 20px rgb(14 175 238 / 5%);
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    display: inline;
+	}
+	.title-left2:before {
+		content: '';
+    position: absolute;
+    height: 3px;
+    background-color: var(--theme);
+    width: 100%;
+    bottom: -6px;
+    display: inline;
+  }
+
+	.coding {
+		float: left;
+	}
+
+	.hljs {
+		background: #303030;
+		color: white;
+    border-radius: 2px;
+    border-top: 4px solid #00aeef;
+    -moz-box-shadow: inset 0 0 10px #000;
+    box-shadow: inset 0 0 10px #000;
+    counter-increment: line;
+		float: left;
+		height: 40vh;
+		width: 80vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: .5em;
+	}
+	.hljs, .hljs-subst {
+	    color: #f7f7f3;
+	    font-weight: 100;
+	}
+	.hljs-comment {
+	    color: #888;
+	}
+	.hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta-keyword, .hljs-name, .hljs-selector-tag {
+	    font-weight: 600;
+	}
+	.hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+	    color: #f8ec00;
+	    font-weight: 100;
+	}
+	.hljs-section, .hljs-title {
+		  font-family: "Courier New", monospace;
+	    color: #a3b2ff;
+	    font-weight: 800;
+	}
+	.hljs-link, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+	    color: #bc6060;
+	}
+	.hljs-literal {
+	    color: #78a960;
+	}
+	.hljs-addition, .hljs-built_in, .hljs-bullet, .hljs-code {
+	    color: #397300;
+	}
+	.hljs-meta {
+	    color: #1f7199;
+	}
+	.hljs-meta-string {
+	    color: #4d99bf;
+	}
+	.hljs-emphasis {
+	    font-style: italic;
+	}
+	.hljs-strong {
+	    font-weight: 700;
+	}
+	
+
 
 
 
