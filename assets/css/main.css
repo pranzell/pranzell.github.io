@@ -8165,8 +8165,8 @@
 	    width: 25px;
 	}
 	button.owl-next, button.owl-prev, button.owl-dot {
-		border: none!important;
-		height: 0!important;
+	    border: none!important;
+	    height: 0!important;
 	}
 
 
@@ -8174,7 +8174,7 @@
 -------------------------------------------- */
 
 	.map {
-		width: 100%;
+	    width: 100%;
 	}
 
 
@@ -8188,102 +8188,102 @@
 	}
 
 	.wrapper.style10 {
-      background-color: white;
-      height: 100vh;
-      font-family: Open Sans;
-  }
+	    background-color: white;
+	    height: 100vh;
+	    font-family: Open Sans;
+	}
   
-  .wrapper.style10.p {
-      color: black;
-  }
-  
-  .style10 {
-  	height: 100%;
-  }
-
-
-  #detailsbox {
-  	padding: 1em 0 1em 0.1em;
-  	margin-top: 1em;
-	  display: flex;
-	  flex-wrap: wrap;
-	  width: 500px;
-	  gap: 10px;
+  	.wrapper.style10.p {
+	    color: black;
+	}
+	
+	.style10 {
+	    height: 100%;
+	}
+	
+	#detailsbox {
+	    padding: 1em 0 1em 0.1em;
+	    margin-top: 1em;
+	    display: flex;
+	    flex-wrap: wrap;
+	    width: 500px;
+	    gap: 10px;
 	}
 	.boxitem-title {
-		color: #969da8; 
-		font-size: 0.75rem; 
-		line-height: 1rem;
+	    color: #969da8; 
+	    font-size: 0.75rem; 
+	    line-height: 1rem;
 	}
 	.boxitem-stat {
-		color: black; 
-		font-size: 0.90rem; 
-		line-height: 1.5rem;
+	    color: black; 
+	    font-size: 0.90rem; 
+	    line-height: 1.5rem;
 	}
 
 	.boxitem {
-	  width: 100px;
-	  height: 50px;
-	  border-right: 0.5px #e5e7eb solid;
+	    width: 100px;
+	    height: 50px;
+	    border-right: 0.5px #e5e7eb solid;
 	}
 
-  .features2 {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-radius: 0.25em;
-    border: solid 1px rgba(255, 255, 255, 0.15);
-    background-color: #f8f8f8;
-    margin: 1em 0 2em 0;
+	.features2 {
+	    display: -moz-flex;
+	    display: -webkit-flex;
+	    display: -ms-flex;
+	    display: flex;
+	    -moz-flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    border-radius: 0.25em;
+	    border: solid 1px rgba(255, 255, 255, 0.15);
+	    background-color: #f8f8f8;
+	    margin: 1em 0 2em 0;
 	}
 
 	.features2 p {
-		font-size: 1rem; 
-		padding: 1em 0 0 0.5em;
+	    font-size: 1rem; 
+	    padding: 1em 0 0 0.5em;
 	}
 
 	.title-left2 {
-    font-size: 1.75rem;
-    color: black;
-    position: relative;
-    text-shadow: 0 0 20px rgb(14 175 238 / 5%);
-    margin-top: 0.3em;
-    margin-bottom: 1em;
-    display: inline;
+	    font-size: 1.75rem;
+	    color: black;
+	    position: relative;
+	    text-shadow: 0 0 20px rgb(14 175 238 / 5%);
+	    margin-top: 0.3em;
+	    margin-bottom: 1em;
+	    display: inline;
 	}
+	
 	.title-left2:before {
-		content: '';
-    position: absolute;
-    height: 3px;
-    background-color: var(--theme);
-    width: 100%;
-    bottom: -6px;
-    display: inline;
-  }
+	    content: '';
+	    position: absolute;
+	    height: 3px;
+	    background-color: var(--theme);
+	    width: 100%;
+	    bottom: -6px;
+	    display: inline;
+	}
 
 	.coding {
-		float: left;
+	    float: left;
 	}
 
 	.hljs {
-		background: #303030;
-		color: white;
-    border-radius: 2px;
-    border-top: 4px solid #00aeef;
-    -moz-box-shadow: inset 0 0 10px #000;
-    box-shadow: inset 0 0 10px #000;
-    counter-increment: line;
-		float: left;
-		height: 40vh;
-		width: 80vh;
-    overflow-x: auto;
-    overflow-y: auto;
-    padding: .5em;
+	    background: #303030;
+	    color: white;
+	    border-radius: 2px;
+	    border-top: 4px solid #00aeef;
+	    -moz-box-shadow: inset 0 0 10px #000;
+	    box-shadow: inset 0 0 10px #000;
+	    counter-increment: line;
+	    float: left;
+	    height: 40vh;
+	    width: 80vh;
+	    overflow-x: auto;
+	    overflow-y: auto;
+	    padding: .5em;
 	}
 	.hljs, .hljs-subst {
 	    color: #f7f7f3;
@@ -8300,7 +8300,7 @@
 	    font-weight: 100;
 	}
 	.hljs-section, .hljs-title {
-		  font-family: "Courier New", monospace;
+	    font-family: "Courier New", monospace;
 	    color: #a3b2ff;
 	    font-weight: 800;
 	}
@@ -8326,8 +8326,5 @@
 	    font-weight: 700;
 	}
 	
-
-
-
 
 /*  ---- EOF ----  */
