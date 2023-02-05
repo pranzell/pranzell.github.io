@@ -78,7 +78,7 @@
 			<div id="wrapper" class="blogsection">
 			<!---------- TOPICS ---------->
 				<!-- Home -->
-				<section id="section0" style="height: 280vh;" class="wrapper style10 fade-up">
+				<section id="section0" style="height: 260vh;" class="wrapper style10 fade-up">
 					<div class="inner">
 						<h2 class="title-left2">Introduction</h2>
 						<div class="features2">
@@ -124,7 +124,7 @@
 				<!-- 1. Requirements -->
 
 				<!-- 2. Data Collection -->
-				<section id="section2" class="wrapper style10 fade-up">
+				<section id="section2" style="height: 260vh;" class="wrapper style10 fade-up">
 					<div class="inner">
 						<h2 class="title-left2">Data Collection</h2>
 						
@@ -135,7 +135,7 @@
 						  </div>
 						  <div class='boxitem'>
 						  	<h4 class="boxitem-title">Read Time</h4>
-						    <p class="boxitem-stat">15 Mins</p>
+						    <p class="boxitem-stat">10 Mins</p>
 						  </div>
 						  <div class='boxitem' style="border:none;">
 						  	<h4 class="boxitem-title">Version</h4>
@@ -144,24 +144,64 @@
 						</div>
 						
 						<div class="features2">
-							<p>Definition!</p>
+							<p>Twitter is a popular social media platform that is widely used for communication, information sharing and entertainment. As a result, there is a significant amount of data generated on the platform every day. Methods of Data Gathering:<br><br><span class="content-keywords2">1. Twitter API </span>(discontinued from Feb 1, 2023): Using a developer account the Twitter API provides a way to access Twitter data in a programmatic way. <br><span class="content-keywords2">2. Scraping</span>: Web scraping is another method of data gathering, and this project uses one such tool, <a href="https://github.com/JustAnotherArchivist/snscrape" class="content-keywords">snscrape</a>. This project utilizes a wrapper around this tool to extract thousands of tweets in an iterative manner.<br><span class="content-keywords2">3. Third-party tools</span>: There are several third-party tools such as Hootsuite, TweetDeck, and Socialbakers that can be used to gather data from Twitter.<br><br>The <span class="content-keywords2">wrapper code</span> used to extract twitter data using the API tool could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>.</p>
 						</div>
-						
-						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
+						<div>
+							<p>The process of collecting data began with a review of the literature and examination of various sources, including the developer API and Kaggle. However, since the scope was limited to the University of Colorado Boulder, specific Twitter metadata was required. To address this, the snscrape tool was utilized. SNScrape API accesses the archived Twitter repository through asynchronous ten-fold developer accounts obtained over time. It provides a powerful search query that can be passed to the endpoint call, but the user does not need any API key. The returned JSON object contains several meta-data information that could be mined. For the purposes of the project, a <span class="content-keywords2">wrapper was created to make data retrieval easier, returning only the necessary attributes</span> in a list form.<br><br>The request body that could be used for the original endpoint looked like:  "{search_query} since:{YYYY-MM-DD} until:{YYYY-MM-DD}"<br><br>Example of a sample POST request made via the original tool:<br></p>
+							<div class="coding">
+								<pre>
+									<code style="height: 35vh;width: 80vh;" class="python">	import os
+	import pandas as pd
+	#!pip install git+https://github.com/JustAnotherArchivist/snscrape.git
+	import snscrape.modules.twitter as sntwitter # the magic
+	# API POST message body
+	search_query = "cuboulder"
+	start_date = "2022-12-01"
+	end_date = "2022-12-03"
+	message_body = '{} since:{} until:{}'.format(search_query, start_date, end_date)
+	print(message_body)
+	# returns a generator with json response
+	historical_metadata_raw = sntwitter.TwitterSearchScraper(message_body).get_items()
+	historical_metadata = [tweet for tweet in historical_metadata_raw]</code>
+								</pre>
+							</div>
+							<div style="margin-top: 5em">
+								<p style="margin-top: 2em;">The above sample API request would generate an output like:</p>
+								<img src="images/api.png" width="70%" height="60%" alt="Image"/>
+								<br><br>
+								<p>The extensive code for retireving project-related tweets for complicated search queries could be found in the wrapper code linked above. The parsed JSON was stored as a CSV file, and the <span class="content-keywords2">final raw dataset</span> consisting of Twitter's historical meta-data used for the project had following associated attributes:
+								<dl>
+									<dt>Dataset Type</dt>
+										<dd>- Dataset type: Record Data</dd>
+										<dd>- Dataset build: Created on the fly using API</dd>
+									<br>
+									<dt>Dataset Configuration</dt>
+										<dd>- Number of records: 3430</dd>
+										<dd>- Number of columns: 14</dd>
+										<dd>- Start Date of dataset: 2020-01-01</dd>
+										<dd>- Last Date of dataset: 2022-12-31</dd>
+									<br>
+									<dt>Label Configuration</dt>
+										<dd>- Annotated/Labelled: YES</dd>
+										<dd>- Number of labels: 7</dd>
+										<dd>- Usecases: Supervised, Semi-supervised, Unsupervised</dd>
+									<br>
+									<dt>Data Contents</dt>
+										<ul>
+											<li>Tweets: These contain text, images, and links, and can be used to gather information on topics, trends, and opinions.</li>
+											<li>User Profiles: Information about the account owner, such as name, location, and bio which can be used to understand the demographics of the audience and target market.</li>
+											<li>Followers and Friends: This data can be used to understand the social connections and relationships between users on the platform.</li>
+										</ul>
+									<br>
+								</dl>					
+							</div>
 						</div>
 					</div>
 				</section>
 				<!-- 2. Data Collection -->
 
 				<!-- 3. EDA -->
-				<section id="section3" class="wrapper style10 fade-up">
+				<section id="section3" style="height: 1200vh;" class="wrapper style10 fade-up">
 					<div class="inner">
 						<h2 class="title-left2">Data Preprocessing and Exploratory Data Analysis</h2>
 						
@@ -181,18 +221,100 @@
 						</div>
 						
 						<div class="features2">
-							<p>Definition!</p>
+							<p><span class="content-keywords2">Data preprocessing</span> is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data. The data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results. <br><br>To address this, the data was thoroughly <span class="content-keywords2">cleaned, transformed, standardized, tokenized and vectorized</span>. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).<br><br>The <span class="content-keywords2">raw dataset</span> could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>.<br><a target="_blank" href="images/rawdata.jpg"><img src="images/rawdata.jpg" alt="rawdata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The <span class="content-keywords2">pre-processed dataset</span> could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>.<br><a target="_blank" href="images/processeddata.jpg"><img src="images/processeddata.jpg" alt="procsseddata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The <span class="content-keywords2">EDA and pre-processing Python code</span> could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>
+							</p>
 						</div>
 						
-						<p>Something exciting is coming up! Stay tuned.</p>
+						<p>These were steps followed for ensuring data-sanity to make it ready for modelling purposes later-on:<br>1. Loading required pacakges in Python 3.8.0<br>2. Loading Resources and Dataset<br>3. Feature Segmentation<br>4. Univariate Analysis and Visualization<br>5. Multivariate Analysis and Visualization<br>6. Missing value detection and treatment<br>7. Preprocessing<br>8. Vectorization</p>
+
+						<p>Based on the above analysis, following pre-processing measures were considered for numerical data:<br>- Discretization/Binning<br>- Label Analysis<br><br>
+
+						<h3 style="color: black;">STEP-BY-STEP PROCESS FLOW<hr width="95%" color="grey" size="5" align="left"> </h3>
 						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
+
+						<h3 style="color: black;">Step 1: Loading Packages</h3><br>
+						<p>For the scope of the project, here are the two necessary setup files required to run the project code:<br>1. Python Requirements: <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords"> Requirements.txt</a><br>2. Anaconda Environment<a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords"> conda_env.yaml</a></p><br>
+
+
+						<h3 style="color: black;">Step 2: Loading Resources and Data</h3><br>
+						<p><img src="images/dirstr.jpg" width="45%" height="40%" alt="Image" style="float: right; margin-left: 40px;"/>A lot of generic and specific resouces were required to run the project. A general directory architecture for the project setup looked like:<br>
+							<ul>
+								<li>Contents of Resources directory could be found<a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords"> here.</a><br><img src="images/dir1.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
+								
+								<li>Spacy Model could be installed and download from <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here.</a><br><img src="images/dir2.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
+								
+								<li>Roberta Transformers model could be loaded from <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here.</a><br><img src="images/dir3.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
+							</ul>
+
+						<p><img src="images/datadescribe.jpg" width="45%" height="40%" alt="Image" style="float:right; margin-left: 40px;"/><br>The original dataset consisted of 13 features and 1 label set. Timestamp were parsed into daily, monthly and yearly bins for visualization purposes. These represent some of the statistical insights for numerical features:</p><br><br><br><br><br><br>
+
+						
+						<h3 style="color: black;">Step 3: Feature Segmentation</h3><br>
+						<p>The feature set was categorized into categories such as: temporal, text, boolean, identifier, quanitative.</p><br>
+
+						
+						<h3 style="color: black;">Step 4: Univariate Analyis</h3><br>
+						<p><a target="_blank" href="images/label1.jpg"><img src="images/label1.jpg" alt="label1" style="float:right; border: 1px solid #ddd; border-radius: 4px; padding: 5px; width: 30%; height: 30%"></a>The labels were heavily unbalanced and the minority classes were too low in count.<br><br>To prevent fitting problems, the minority classes were binned into "cu_others" unified label.<br><br><br><br><br><br><br><br><br><br><br><a target="_blank" href="images/label2.jpg"><img src="images/label2.jpg" alt="label2" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 30%; height: 30%"></a>Finally the dataset was represented by three labels which were still heavily unbalanced but could be worked upon using re-sampling techniques.</p><br><br><br><br><br><br><br><br><br><br>
+
+						<p><br><a target="_blank" href="images/uni1.jpg"><img src="images/uni1.jpg" alt="uni1" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a>Over the years, the number of influencers and Official Public Handles tweeting using some of the terms related to CUBoulder such as Football, Basketball, Online, etc have reduced. This could be primarily due to the factor that most of the tweets belong to students and staff members, and since the hottest topic for the two years was "Research" this drop was expected.<br><br>Also there could be less activity from official public handles such as CUBoulder, CUEngineering, etc. <br><br>However, in the research wing, it could have been plausible that not many recognized or verified researchers were tweeting during the lockdown period.<br><br>It could be much precise to visualize trending #Hashtags across these years.</p><br><br><br>
+
+						<br><a target="_blank" href="images/uni2.jpg"><img src="images/uni2.jpg" alt="uni2" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a>Some of the most active verified Twitter handles could be found alongside in the chart. <br><br>CUBoulder and CUEngineering were found to be the top handles, while some verified individual account holders have been tweeting about CU Boulder too.</p><br><br><br><br>
+
+						<br><a target="_blank" href="images/uni3.jpg"><img src="images/uni3.jpg" alt="uni3" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 45%; height: 60%; margin-left: 20px;"></a>CUEngineering, CUBoulder and EarthLabCU seem to be the most frequent domains tweeting during the considered timeline.<br><br>Out of the top three public handles, CUEngineering, CUBoulder had a verified status (Blue tick) but EarthLabCU didn't have - a good pointer for CU Team to look into!<br><br>The first two could have been predicted, but it was interesting to note EarthLab at CU being the third most active domain during the considered two years.<br><br>Could the tweets be about Covid-19 given the time-period of 2020-2022 considered?<br><br>Were there some innovative ideas or recognized researches happening in the Earth Lab?</p><br>
+
+						<br><a target="_blank" href="images/uni4.jpg"><img src="images/uni4.jpg" alt="uni4" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 45%; margin-left: 20px;"></a>These were the top twitter users having the most reach and could have been tracked as potential key influencers, in a more generic sense.<br><br>Users such as "Mitchellbyars" and "ShellyMBoulder" seems to have a good following and their each tweet reaches about 33 people, which infact is great when compared to small active user-base.</p><br><br><br><br>
+
+						<br><a target="_blank" href="images/uni6.jpg"><img src="images/uni6.jpg" alt="uni6" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 40%; margin-left: 20px;"></a>"Research", "Covid19" and interestingly "Python" were some of the most common trending #Hashtags used over the two year period.</p><br><br><br><br><br><br><br>
+
+						
+
+						<h3 style="color: black;">Step 5: Multivariate Analyis</h3><br>
+						<p><br><a target="_blank" href="images/bicorr.jpg"><img src="images/bicorr.jpg" alt="bicorr" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 50%; margin-left: 20px;"></a>As expected, Like-Count, Reply-Count, and Retweet-Count were found to be quite correlated.<br><br>Contrast to common belief, User-Followers-Count was found to be not at all correlated to the above three metrics.</p><br><br><br>
+
+						<p><br><a target="_blank" href="images/bi2.jpg"><img src="images/bi2.jpg" alt="bi2" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 50%; margin-left: 20px;"></a>The average number of followers (following account-owners) was a more wide-spread (bi-modal) and possibly counted for famous personalities.<br><br>The average number of people these twitter account-owners represented a more common and expected normal distribution (skewed) curve, since some handles would be following a lot more people as compared to few reserved handles.</p><br><br><br>
+
+						<p>Surprisngly, the number of tweets went down over the the two years. However, the number of retweets and likes tenfolded. It could have been due to recent events such as CUBuff Football team's poor performance and onbaording of Coach Prime Deion Sanders.<br><br>Events like transfers, ground-breaking research, alerts could have polarized the public sentiments.</p>
+						<a target="_blank" href="images/bi3.jpg"><img src="images/bi3.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 40%; margin-left: 20px;"></a><br>
+						<a target="_blank" href="images/bi4.jpg"><img src="images/bi4.jpg" alt="bi4" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 40%; margin-left: 20px;"></a><br>
+						<a target="_blank" href="images/bi5.jpg"><img src="images/bi5.jpg" alt="bi5" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 40%; margin-left: 20px;"></a><br><br>
+
+						
+						<h3 style="color: black;">Step 6: Missing Values</h3><br>
+						<p>No missing values were found in the considered dataset.</p><br>
+
+
+						<h3 style="color: black;">Step 7: Preprocessing Pipeline</h3><br>
+						<p>Based on above analysis, following pre-processing measures were considered for textual data:
+							<ul>
+								<li>Unicoding</li>
+								<li>Short-Text Twitter Tokenization</li>
+								<li>Expanding Contraction words</li>
+								<li>Language Detetion</li>
+								<li>Lematization/Stemming</li>
+								<li>Parts of Speech Tagging</li>
+								<li>Stopwords removal</li>
+								<li>Special characters removal</li>
+								<li>Emojis removal</li>
+								<li>Emoticons removal</li>
+								<li>Weblinks removal</li>
+								<li>Quick fixing of mis-spelled words (lexicon)</li>
+								<li>Custom vocabulary creation and retention from removal</li>
+								<li>Regluar Expressions parsing</li>
+								<li>Anchor text removal</li>
+								<li>Hashtags parsing</li>
+								<li>Greeting, saluation keywords removal</li>
+							</ul><br>
+
+						<p>Here's how the preprocessing pipeline performed, a comparison between bag-of-words before and after executing preprocessing :</p>
+							<a target="_blank" href="images/prepro.jpg"><img src="images/prepro.jpg" alt="prepro" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a><a target="_blank" href="images/postpro.jpg"><img src="images/postpro.jpg" alt="postpro" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 45%; margin-left: 20px;"></a><br><br><br>
+
+						<p>Here's the complete short-text cleaning pipeline applicable to geneal short texts: <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">link</a></p>
+						<p>Dimensions of dataset beofre preprocessing:  (3430, 14)</p>
+						<p>Dimensions of dataset beofre preprocessing:  (3394, 22)</p><br><br>
+
+						<h3 style="color: black;">Step 8: Vectorization</h3><br>
+						<p>Sentence Bert Transformers <a href="https://www.sbert.net/" class="content-keywords">sBert</a> was used for vectorizing processed tweet text into meaningful embeddings.</p>
+						<p>Complete code for vectorization could be found <a href="https://www.sbert.net/" class="content-keywords">here</a>.</p><br>
 					</div>
 				</section>
 				<!-- 3. EDA -->

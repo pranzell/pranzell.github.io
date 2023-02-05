@@ -2550,7 +2550,7 @@
 
 	a:hover {
 		border-bottom-color: transparent;
-		color: #ffffff;
+		color: blue;
 	}
 
 	strong, b {
@@ -8183,6 +8183,9 @@
 /* PAGE 2 
 -------------------------------------------- */
 	
+	a:hover {
+  color: hotpink;
+}
 	.blogsection {
 	    color: black;
 	}
@@ -8192,8 +8195,8 @@
 	    height: 100vh;
 	    font-family: Open Sans;
 	}
-  
-  	.wrapper.style10.p {
+	
+	.wrapper.style10.p {
 	    color: black;
 	}
 	
@@ -8289,6 +8292,8 @@
 
 	.coding {
 	    float: left;
+	    display: flex;
+	    margin-top: -1.5em;
 	}
 
 	.hljs {
