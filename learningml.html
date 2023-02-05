@@ -116,9 +116,9 @@
 					<div class="inner">
 						<h2 class="title-left2">Requirements</h2>
 						<div class="features2">
-							<p>Req.</p>
+							<p>Coming Soon!</p>
 						</div>
-						<p>These are some of the project requirements and initial setup. Coming Soon!</p>
+						<p>The complete Python code along with datasets used and flat files could be found <span class="content-keywords2"><a href="https://github.com/pranzell/pranzell.github.io/tree/master/source" class="content-keywords"> here!</a></span></p>
 					</div>
 				</section>
 				<!-- 1. Requirements -->
@@ -169,7 +169,7 @@
 								<p style="margin-top: 2em;">The above sample API request would generate an output like:</p>
 								<img src="images/api.png" width="70%" height="60%" alt="Image"/>
 								<br><br>
-								<p>The extensive code for retireving project-related tweets for complicated search queries could be found in the wrapper code linked above. The parsed JSON was stored as a CSV file, and the <span class="content-keywords2">final raw dataset</span> consisting of Twitter's historical meta-data used for the project had following associated attributes:
+								<p>The extensive code for retireving project-related tweets for complicated search queries could be found in the wrapper code linked above. The parsed JSON was stored as a CSV file, and the <span class="content-keywords2"><a href="https://raw.githubusercontent.com/pranzell/pranzell.github.io/master/source/data/raw_cuboulder_Intents_TwitterData_2020_02_05_2022-12-31.csv" class="content-keywords"> final raw dataset</a></span> consisting of Twitter's historical meta-data used for the project had following associated attributes:
 								<dl>
 									<dt>Dataset Type</dt>
 										<dd>- Dataset type: Record Data</dd>
@@ -201,28 +201,27 @@
 				<!-- 2. Data Collection -->
 
 				<!-- 3. EDA -->
-				<section id="section3" style="height: 1200vh;" class="wrapper style10 fade-up">
+				<section id="section3" style="height: 870vh;" class="wrapper style10 fade-up">
 					<div class="inner">
 						<h2 class="title-left2">Data Preprocessing and Exploratory Data Analysis</h2>
 						
 						<div id='detailsbox'>
 						  <div class='boxitem'>
 						  	<h4 class="boxitem-title">Published</h4>
-						    <p class="boxitem-stat">2 Feb 2023</p>
+						    <p class="boxitem-stat">3 Feb 2023</p>
 						  </div>
 						  <div class='boxitem'>
 						  	<h4 class="boxitem-title">Read Time</h4>
-						    <p class="boxitem-stat">15 Mins</p>
+						    <p class="boxitem-stat">45 Mins</p>
 						  </div>
 						  <div class='boxitem' style="border:none;">
 						  	<h4 class="boxitem-title">Version</h4>
-						    <p class="boxitem-stat">1.0</p>
+						    <p class="boxitem-stat">1.1</p>
 						  </div>
 						</div>
 						
 						<div class="features2">
-							<p><span class="content-keywords2">Data preprocessing</span> is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data. The data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results. <br><br>To address this, the data was thoroughly <span class="content-keywords2">cleaned, transformed, standardized, tokenized and vectorized</span>. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).<br><br>The <span class="content-keywords2">raw dataset</span> could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>.<br><a target="_blank" href="images/rawdata.jpg"><img src="images/rawdata.jpg" alt="rawdata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The <span class="content-keywords2">pre-processed dataset</span> could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>.<br><a target="_blank" href="images/processeddata.jpg"><img src="images/processeddata.jpg" alt="procsseddata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The <span class="content-keywords2">EDA and pre-processing Python code</span> could be found <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here</a>
-							</p>
+							<p><span class="content-keywords2">Data preprocessing</span> is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data. The data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results. <br><br>To address this, the data was thoroughly <span class="content-keywords2">cleaned, transformed, standardized, tokenized and vectorized</span>. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).<br><br>The <span class="content-keywords2">raw dataset</span> could be found <a href="https://raw.githubusercontent.com/pranzell/pranzell.github.io/master/source/data/raw_cuboulder_Intents_TwitterData_2020_02_05_2022-12-31.csv" class="content-keywords">here</a>.<br><a target="_blank" href="images/rawdata.jpg"><img src="images/rawdata.jpg" alt="rawdata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The <span class="content-keywords2">pre-processed dataset</span> could be found <a href="https://raw.githubusercontent.com/pranzell/pranzell.github.io/master/source/data/processed_cuboulder_TwitterData.csv" class="content-keywords">here</a>.<br><a target="_blank" href="images/processeddata.jpg"><img src="images/processeddata.jpg" alt="procsseddata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The EDA and pre-processing Python code could be found <span class="content-keywords"><a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb">here</a></span></p>
 						</div>
 						
 						<p>These were steps followed for ensuring data-sanity to make it ready for modelling purposes later-on:<br>1. Loading required pacakges in Python 3.8.0<br>2. Loading Resources and Dataset<br>3. Feature Segmentation<br>4. Univariate Analysis and Visualization<br>5. Multivariate Analysis and Visualization<br>6. Missing value detection and treatment<br>7. Preprocessing<br>8. Vectorization</p>
@@ -233,17 +232,17 @@
 						
 
 						<h3 style="color: black;">Step 1: Loading Packages</h3><br>
-						<p>For the scope of the project, here are the two necessary setup files required to run the project code:<br>1. Python Requirements: <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords"> Requirements.txt</a><br>2. Anaconda Environment<a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords"> conda_env.yaml</a></p><br>
+						<p>For the scope of the project, here are the two necessary setup files required to run the project code:<br>1. Python Requirements: <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/Requirements.txt" class="content-keywords"> Requirements.txt</a><br>2. Anaconda Environment<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/virtual_environment.yml" class="content-keywords"> virtual_environment.yml</a></p><br>
 
 
 						<h3 style="color: black;">Step 2: Loading Resources and Data</h3><br>
 						<p><img src="images/dirstr.jpg" width="45%" height="40%" alt="Image" style="float: right; margin-left: 40px;"/>A lot of generic and specific resouces were required to run the project. A general directory architecture for the project setup looked like:<br>
 							<ul>
-								<li>Contents of Resources directory could be found<a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords"> here.</a><br><img src="images/dir1.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
+								<li>Contents of Resources directory could be found<a href="https://github.com/pranzell/pranzell.github.io/tree/master/source/models/resources" class="content-keywords"> here.</a><br><img src="images/dir1.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
 								
-								<li>Spacy Model could be installed and download from <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here.</a><br><img src="images/dir2.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
+								<li>Spacy English Large Model Version 3.5.0 (en_core_web_lg-3.5.0) could be installed and download from <a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.5.0" class="content-keywords">here.</a><br><img src="images/dir2.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
 								
-								<li>Roberta Transformers model could be loaded from <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">here.</a><br><img src="images/dir3.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
+								<li>Sentence Bert Transformers (all-distilroberta-v1) model could be loaded from <a href="https://huggingface.co/sentence-transformers/all-distilroberta-v1" class="content-keywords">here.</a><br><img src="images/dir3.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
 							</ul>
 
 						<p><img src="images/datadescribe.jpg" width="45%" height="40%" alt="Image" style="float:right; margin-left: 40px;"/><br>The original dataset consisted of 13 features and 1 label set. Timestamp were parsed into daily, monthly and yearly bins for visualization purposes. These represent some of the statistical insights for numerical features:</p><br><br><br><br><br><br>
@@ -266,7 +265,6 @@
 
 						<br><a target="_blank" href="images/uni6.jpg"><img src="images/uni6.jpg" alt="uni6" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 40%; margin-left: 20px;"></a>"Research", "Covid19" and interestingly "Python" were some of the most common trending #Hashtags used over the two year period.</p><br><br><br><br><br><br><br>
 
-						
 
 						<h3 style="color: black;">Step 5: Multivariate Analyis</h3><br>
 						<p><br><a target="_blank" href="images/bicorr.jpg"><img src="images/bicorr.jpg" alt="bicorr" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 50%; margin-left: 20px;"></a>As expected, Like-Count, Reply-Count, and Retweet-Count were found to be quite correlated.<br><br>Contrast to common belief, User-Followers-Count was found to be not at all correlated to the above three metrics.</p><br><br><br>
@@ -308,13 +306,13 @@
 						<p>Here's how the preprocessing pipeline performed, a comparison between bag-of-words before and after executing preprocessing :</p>
 							<a target="_blank" href="images/prepro.jpg"><img src="images/prepro.jpg" alt="prepro" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a><a target="_blank" href="images/postpro.jpg"><img src="images/postpro.jpg" alt="postpro" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 45%; margin-left: 20px;"></a><br><br><br>
 
-						<p>Here's the complete short-text cleaning pipeline applicable to geneal short texts: <a href="https://github.com/pranzell/Get_Historical_Tweets/blob/main/getTwitterData.ipynb" class="content-keywords">link</a></p>
+						<p>Here's the complete short-text cleaning pipeline applicable to geneal short texts: <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="content-keywords">link</a></p>
 						<p>Dimensions of dataset beofre preprocessing:  (3430, 14)</p>
 						<p>Dimensions of dataset beofre preprocessing:  (3394, 22)</p><br><br>
 
 						<h3 style="color: black;">Step 8: Vectorization</h3><br>
 						<p>Sentence Bert Transformers <a href="https://www.sbert.net/" class="content-keywords">sBert</a> was used for vectorizing processed tweet text into meaningful embeddings.</p>
-						<p>Complete code for vectorization could be found <a href="https://www.sbert.net/" class="content-keywords">here</a>.</p><br>
+						<p>Complete code for vectorization could be found <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataVectorization.ipynb" class="content-keywords">here</a>.</p><br>
 					</div>
 				</section>
 				<!-- 3. EDA -->
