@@ -7902,7 +7902,8 @@
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1280px) {
+		
+		/*@media screen and (max-width: 880px) {
 
 			#sidebar {
 				height: 3.5em;
@@ -7972,6 +7973,14 @@
 
 		}
 
+		@media only screen and (max-width: 600px) {
+			#sidebar {
+				width: 100%;
+				height: auto;
+				position: relative;
+			}
+		}
+		*/
 
 /* INTRO
 -------------------------------------------- */
