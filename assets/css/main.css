@@ -7348,6 +7348,8 @@
 			opacity: 1.0;
 			font-size: 1rem;
 			font-weight: 400;
+			margin-left: 1.5em;
+			width: auto;
 		}
 
 		.wrapper.fade-up.inactive > .inner,
@@ -7501,23 +7503,6 @@
 	#sidebar + #wrapper {
 		margin-left: 18em;
 	}
-
-		@media screen and (max-width: 1280px) {
-
-			#sidebar + #wrapper {
-				margin-left: 0;
-				padding-top: 3.5em;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#sidebar + #wrapper {
-				padding-top: 0;
-			}
-
-		}
 
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
@@ -8201,7 +8186,6 @@
 
 	.wrapper.style10 {
 	    background-color: white;
-	    height: 100vh;
 	    font-family: Open Sans;
 	}
 	
@@ -8210,7 +8194,8 @@
 	}
 	
 	.style10 {
-	    height: 100vh;
+		padding-bottom: 10em;
+		padding-top: 1.5em;
 	}
 	
 	#detailsbox {
@@ -8300,9 +8285,7 @@
 	}
 
 	.coding {
-	    float: left;
 	    display: flex;
-	    margin-top: -1.5em;
 	}
 
 	.hljs {
