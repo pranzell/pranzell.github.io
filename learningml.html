@@ -16,12 +16,14 @@
 		<title>Pranjal Pathak ML Tutorials</title>
 		<!-- Metadata -->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<meta name="description" content="Pranjal Pathak Portfolio">
 		<meta name="author" content="pranjalpathak">
 		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/ml1.css" />
+		<link rel="stylesheet" href="assets/css/ml2.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
 		<!-- Favicons -->
@@ -37,6 +39,13 @@
 		<link href="assets/lightbox/css/lightbox.min.css" rel="stylesheet">
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
   		<script>hljs.initHighlightingOnLoad();</script>
+
+	    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+	    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+	    
+
+
 		
 	</head>
 
@@ -230,100 +239,444 @@
 						  </div>
 						</div>
 						
-						<div class="features2">
-							<p><span class="content-keywords2">Data preprocessing</span> is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data. The data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results. <br><br>To address this, the data was thoroughly <span class="content-keywords2">cleaned, transformed, standardized, tokenized and vectorized</span>. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).<br><br>The <span class="content-keywords2">raw dataset</span> could be found <a href="https://raw.githubusercontent.com/pranzell/pranzell.github.io/master/source/data/raw_cuboulder_Intents_TwitterData_2020_02_05_2022-12-31.csv" class="content-keywords">here</a>.<br><a target="_blank" href="images/rawdata.jpg"><img src="images/rawdata.jpg" alt="rawdata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The <span class="content-keywords2">pre-processed dataset</span> could be found <a href="https://raw.githubusercontent.com/pranzell/pranzell.github.io/master/source/data/processed_cuboulder_TwitterData.csv" class="content-keywords">here</a>.<br><a target="_blank" href="images/processeddata.jpg"><img src="images/processeddata.jpg" alt="procsseddata" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 300px;"></a><br><br>The EDA and pre-processing Python code could be found <span class="content-keywords"><a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb">here</a></span></p>
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-1" id="sec-e571">
+							  <div class="u-clearfix u-sheet u-sheet-1">
+							    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+							      <div class="u-gutter-0 u-layout">
+							        <div class="u-layout-row">
+							          <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+							            <div class="u-container-layout u-container-layout-1">
+							              <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+							              <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+							              <div class="u-align-justify u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+							                <div class="u-container-layout u-container-layout-2">
+							                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"> Data preprocessing&nbsp;is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data.&nbsp;</p>
+							                </div>
+							              </div>
+							            </div>
+							          </div>
+							          <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+							            <div class="u-container-layout u-container-layout-3">
+							              <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+							                <div class="u-container-layout u-container-layout-4">
+							                  <p class="u-heading-font u-text u-text-default u-text-4">
+							                    <span style="font-weight: 700;"></span>
+							                    <span style="font-weight: 700;">The&nbsp;data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results.</span>
+							                    <br>
+							                    <br>To address this, the data was thoroughly&nbsp;cleaned, transformed, standardized, tokenized and vectorized. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
+							                <div class="u-container-layout u-container-layout-5">
+							                  <p class="u-large-text u-text u-text-variant u-text-5">Download the <span style="font-weight: 700;">raw dataset</span>
+							                  </p>
+							                  <a href="https://github" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+							                </div>
+							              </div>
+							              <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-4">
+							                <div class="u-container-layout u-container-layout-6">
+							                  <p class="u-large-text u-text u-text-variant u-text-6">Download the <span style="font-weight: 700;">processed</span>&nbsp;<span style="font-weight: 700;">dataset</span>
+							                  </p>
+							                  <a href="https://github" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-2">DOWNLOAD</a>
+							                </div>
+							              </div>
+							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-5">
+							                <div class="u-container-layout u-container-layout-7">
+							                  <p class="u-large-text u-text u-text-variant u-text-7"> The&nbsp;<span style="font-weight: 700;"></span>
+							                    <span style="font-weight: 700;">EDA <span style="font-weight: 400;">and</span> Preprocessing
+							                    </span>&nbsp;code can be downloaded from here
+							                  </p>
+							                  <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-3">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+							                  </a>
+							                </div>
+							              </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+							      <div class="u-gutter-0 u-layout" style="">
+							        <div class="u-layout-row" style="">
+							          <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+							            <div class="u-container-layout u-container-layout-8">
+							              <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-8">02</h1>
+							              <h3 class="u-custom-font u-font-montserrat u-text u-text-9">process</h3>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-6">
+							                <div class="u-container-layout u-container-layout-9">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-7">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-10">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-8" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-10"> 01</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-11"> Loading&nbsp;<span style="font-weight: 700;">Packages</span>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-12">
+							                    <span style="font-size: 18px;"></span>For the scope of the project, here are the two necessary setup files required to run the project code:<br>
+							                    <br>1. Python Requirements:&nbsp;<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/Requirements.txt" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">Requirements.txt</a>
+							                    <br>2. Anaconda Environment<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/virtual_environment.yml" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">&nbsp;virtual_environment.yml</a>
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-9">
+							                <div class="u-container-layout u-valign-bottom u-container-layout-12">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-10">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-13">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-11" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-13"> 02</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-14"> Loading&nbsp;<span style="font-weight: 700;">Resources&nbsp;and&nbsp;Data</span>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-15">
+							                    <span style="font-size: 18px;"></span>A lot of generic and specific resouces were required to run the project. A general directory architecture for the project setup looked like:<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>Contents of Resources directory could be found<a href="https://github.com/pranzell/pranzell.github.io/tree/master/source/models/resources" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">&nbsp;here.</a>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>Spacy English Large Model Version 3.5.0 (en_core_web_lg-3.5.0) could be installed and download from&nbsp;<a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.5.0" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7">here.</a>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>Sentence Bert Transformers (all-distilroberta-v1) model could be loaded from&nbsp;<a href="https://huggingface.co/sentence-transformers/all-distilroberta-v1" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8">here.</a>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>The original dataset consisted of 13 features and 1 label set. Timestamp were parsed into daily, monthly and yearly bins for visualization purposes.&nbsp;<br>
+							                    <br>These represent some of the statistical insights for numerical features:<br>
+							                    <br>
+							                    <br>
+							                    <br><br><br><br><br><br><br>
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-12">
+							                <div class="u-container-layout u-container-layout-15">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-13">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-16">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-14" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-16"> 03</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-17"> Feature&nbsp;<span style="font-weight: 700;">Segmentation</span>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-18">
+							                    <span style="font-size: 18px;"></span>The feature set was categorized into categories such as: temporal, text, boolean, identifier, quantitative.
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-15">
+							                <div class="u-container-layout u-container-layout-18">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-16">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-19">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-17" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-19"> 04</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-20"> Univariate&nbsp;<b>Analysis</b>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-21">
+							                    <span style="font-size: 18px;"></span>The labels were heavily unbalanced and the minority classes were too low in count.<br>
+							                    <br>To prevent fitting problems, the minority classes were binned into "cu_others" unified label.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br><br><br>Finally the dataset was represented by three labels which were still heavily unbalanced but could be worked upon using re-sampling techniques.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>Over the years, the number of influencers and Official Public Handles tweeting using some of the terms related to CUBoulder such as Football, Basketball, Online, etc have reduced. This could be primarily due to the factor that most of the tweets belong to students and staff members, and since the hottest topic for the two years was "Research" this drop was expected.<br>
+							                    <br>Also there could be less activity from official public handles such as CUBoulder, CUEngineering, etc.<br>
+							                    <br>However, in the research wing, it could have been plausible that not many recognized or verified researchers were tweeting during the lockdown period.<br>
+							                    <br>It could be much precise to visualize trending #Hashtags across these years.<br>
+							                    <br>
+							                    <br>Some of the most active verified Twitter handles could be found alongside in the chart.<br>
+							                    <br>CUBoulder and CUEngineering were found to be the top handles, while some verified individual account holders have been tweeting about CU Boulder too.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br><br><br>CUEngineering, CUBoulder and EarthLabCU seem to be the most frequent domains tweeting during the considered timeline.<br>
+							                    <br>Out of the top three public handles, CUEngineering, CUBoulder had a verified status (Blue tick) but EarthLabCU didn't have - a good pointer for CU Team to look into!<br>
+							                    <br>The first two could have been predicted, but it was interesting to note EarthLab at CU being the third most active domain during the considered two years.<br>
+							                    <br>
+							                    <span style="font-weight: 700; font-size: 0.875rem;">Could the tweets be about Covid-19 given the time-period of 2020-2022 considered?<br>
+							                      <br>Were there some innovative ideas or recognized researches happening in the Earth Lab?
+							                    </span>
+							                    <br>
+							                    <br>
+							                    <br>These were the top twitter users having the most reach and could have been tracked as potential key influencers, in a more generic sense.<br>
+							                    <br>Users such as "Mitchellbyars" and "ShellyMBoulder" seems to have a good following and their each tweet reaches about 33 people, which infact is great when compared to small active user-base.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br><br><br><br>
+							                    <br>"Research", "Covid19" and interestingly "Python" were some of the most common trending #Hashtags used over the two year period.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-18">
+							                <div class="u-container-layout u-container-layout-21">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-19">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-22">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-20" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-22"> 05</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-23"> Multivariate&nbsp;<b>Analysis</b>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-24">
+							                    <span style="font-size: 18px;"></span>As expected, Like-Count, Reply-Count, and Retweet-Count were found to be quite correlated.<br>
+							                    <br>Contrast to common belief, User-Followers-Count was found to be not at all correlated to the above three metrics.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>The average number of followers (following account-owners) was a more wide-spread (bi-modal) and possibly counted for famous personalities.<br>
+							                    <br>The average number of people these twitter account-owners represented a more common and expected normal distribution (skewed) curve, since some handles would be following a lot more people as compared to few reserved handles.<br>
+							                    <br>
+							                    <br><br>
+							                    <br>Surprisngly, the number of tweets went down over the the two years.&nbsp;
+							                    <br><br><br><br>
+
+							                    <br>However, the number of retweets and likes ten folded. It could have been due to recent events such as CUBuff Football team's poor performance and onboarding of Coach Prime Deion Sanders.<br>
+							                    <br>Events like transfers, ground-breaking research, alerts could have polarized the public sentiments.<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-21">
+							                <div class="u-container-layout u-container-layout-24">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-22">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-25">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-23" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-25"> 06</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-26"> Missing&nbsp;<span style="font-weight: 700;">Values</span>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-27">
+							                    <span style="font-size: 18px;"></span>The feature set was categorized into categories such as: temporal, text, boolean, identifier, quantitative.
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-24">
+							                <div class="u-container-layout u-container-layout-27">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-25">
+							                    <div class="u-container-layout u-container-layout-28">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-26" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-28"> 07</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-29"> Preprocessing&nbsp;<span style="font-weight: 700;">Pipeline</span>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-30">
+							                    <span style="font-size: 18px;"></span>Based on above analysis, following pre-processing measures were considered for textual data:<br>
+							                    <br>
+							                    <br>-&nbsp; Unicoding<br>-&nbsp; Short-Text Twitter Tokenization<br>-&nbsp; Expanding Contraction words<br>-&nbsp; Language Detection<br>-&nbsp; Lemmatization/Stemming<br>-&nbsp; Parts of Speech Tagging<br>-&nbsp; Stopwords removal<br>-&nbsp; Special characters removal<br>-&nbsp; Emojis removal<br>-&nbsp; Emoticons removal<br>-&nbsp; Weblinks removal<br>-&nbsp; Quick fixing of mis-spelled words (lexicon)<br>-&nbsp; Custom vocabulary creation and retention from removal<br>-&nbsp; Regular Expressions parsing<br>-&nbsp; Anchor text removal<br>-&nbsp; Hashtags parsing<br>-&nbsp; Greeting, salutation keywords removal<br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>
+							                    <br>Here's how the preprocessing pipeline performed, a comparison between bag-of-words&nbsp;before&nbsp;and&nbsp;after&nbsp;executing&nbsp;preprocessing.<br>
+							                    <br>-&nbsp; Dimensions of dataset before preprocessing:&nbsp;(3430, 14)<br>-&nbsp; Dimensions of dataset after preprocessing:&nbsp;(3394, 22)<br>
+							                    <br>
+							                  </p>
+							                </div>
+							              </div>
+							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-27">
+							                <div class="u-container-layout u-container-layout-30">
+							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-28">
+							                    <div class="u-container-layout u-valign-middle u-container-layout-31">
+							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-29" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+							                        <div class="u-container-layout u-valign-middle">
+							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-31"> 08</h2>
+							                        </div>
+							                      </div>
+							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-32"> Text&nbsp; <span style="font-weight: 700;">Vectorization</span>
+							                      </p>
+							                    </div>
+							                  </div>
+							                  <p class="u-custom-font u-heading-font u-text u-text-33">
+							                    <span style="font-size: 18px;"></span>Sentence Bert Transformers&nbsp;<a href="https://www.sbert.net/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9">sBert</a>&nbsp;was used for vectorizing processed tweet text into meaningful embeddings.
+							                  </p>
+							                </div>
+							              </div>
+							            </div>
+							          </div>
+							          <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+							            <div class="u-container-layout u-container-layout-33"><br>
+							              
+							              <img class="u-align-center u-image u-image-default u-image-1" src="images/dirstr.jpg" alt="" data-image-width="1226" data-image-height="788">
+							              <img class="u-align-center u-image u-image-default u-image-2" src="images/dir1.jpg" alt="" data-image-width="1226" data-image-height="788">
+							              <img class="u-align-center u-image u-image-default u-image-3" src="images/dir2.jpg" alt="" data-image-width="1226" data-image-height="788">
+							              <img class="u-align-center u-image u-image-default u-image-4" src="images/dir3.jpg" alt="" data-image-width="1226" data-image-height="788">
+							              <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/datadescribe.jpg" alt="" data-image-width="1192" data-image-height="448">
+							              <img class="u-align-center u-image u-image-contain u-image-default u-image-6" src="images/label1.jpg" alt="" data-image-width="1454" data-image-height="1104">
+							              <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/label2.jpg" alt="" data-image-width="700" data-image-height="544">
+							              <img class="u-image u-image-contain u-image-default u-image-8" src="images/uni1.jpg" alt="" data-image-width="1614" data-image-height="1250">
+							              <img class="u-image u-image-contain u-image-default u-image-9" src="images/uni2.jpg" alt="" data-image-width="1266" data-image-height="520">
+							              <img class="u-image u-image-contain u-image-default u-image-10" src="images/uni3.jpg" alt="" data-image-width="1596" data-image-height="744">
+							              <img class="u-image u-image-contain u-image-default u-image-11" src="images/uni4.jpg" alt="" data-image-width="1596" data-image-height="686">
+							              <img class="u-image u-image-contain u-image-default u-image-12" src="images/uni6.jpg" alt="" data-image-width="1590" data-image-height="554">
+							              <img class="u-image u-image-contain u-image-default u-image-13" src="images/bicorr.jpg" alt="" data-image-width="1602" data-image-height="544">
+							              <img class="u-image u-image-contain u-image-default u-image-14" src="images/bi2.jpg" alt="" data-image-width="1602" data-image-height="544">
+							              <img class="u-image u-image-contain u-image-default u-image-15" src="images/bi3.jpg" alt="" data-image-width="1580" data-image-height="504">
+							              <img class="u-image u-image-contain u-image-default u-image-16" src="images/bi4.jpg" alt="" data-image-width="1580" data-image-height="504">
+							              <img class="u-image u-image-contain u-image-default u-image-17" src="images/bi5.jpg" alt="" data-image-width="1580" data-image-height="504">
+							              <img class="u-image u-image-contain u-image-default u-image-18" src="images/prepro.jpg" alt="" data-image-width="1164" data-image-height="626">
+							              <img class="u-image u-image-contain u-image-default u-image-19" src="images/postpro.jpg" alt="" data-image-width="1164" data-image-height="626">
+							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-30">
+							                <div class="u-container-layout u-container-layout-34">
+							                  <p class="u-large-text u-text u-text-variant u-text-34"> The&nbsp;<span style="font-weight: 700;">E</span>
+							                    <span style="font-weight: 700;">DA <span style="font-weight: 400;">and</span> Preprocessing
+							                    </span>&nbsp;code can be downloaded from here
+							                  </p>
+							                  <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-10">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
+							                  </a>
+							                </div>
+							              </div>
+							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-31">
+							                <div class="u-container-layout u-container-layout-35">
+							                  <p class="u-large-text u-text u-text-variant u-text-35"> Code for&nbsp;<span style="font-weight: 700;">data&nbsp;vectorization</span>&nbsp;could be found here
+							                  </p>
+							                  <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-11">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
+							                  </a>
+							                </div>
+							              </div>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							</section>
 						</div>
-						
-						<p>These were steps followed for ensuring data-sanity to make it ready for modelling purposes later-on:<br>1. Loading required pacakges in Python 3.8.0<br>2. Loading Resources and Dataset<br>3. Feature Segmentation<br>4. Univariate Analysis and Visualization<br>5. Multivariate Analysis and Visualization<br>6. Missing value detection and treatment<br>7. Preprocessing<br>8. Vectorization</p>
-
-						<p>Based on the above analysis, following pre-processing measures were considered for numerical data:<br>- Discretization/Binning<br>- Label Analysis<br><br>
-
-						<h3 style="color: black;">STEP-BY-STEP PROCESS FLOW<hr width="95%" color="grey" size="5" align="left"> </h3>
-						
-
-						<h3 style="color: black;">Step 1: Loading Packages</h3><br>
-						<p>For the scope of the project, here are the two necessary setup files required to run the project code:<br>1. Python Requirements: <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/Requirements.txt" class="content-keywords"> Requirements.txt</a><br>2. Anaconda Environment<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/virtual_environment.yml" class="content-keywords"> virtual_environment.yml</a></p><br>
-
-
-						<h3 style="color: black;">Step 2: Loading Resources and Data</h3><br>
-						<p><img src="images/dirstr.jpg" width="45%" height="40%" alt="Image" style="float: right; margin-left: 40px;"/>A lot of generic and specific resouces were required to run the project. A general directory architecture for the project setup looked like:<br>
-							<ul>
-								<li>Contents of Resources directory could be found<a href="https://github.com/pranzell/pranzell.github.io/tree/master/source/models/resources" class="content-keywords"> here.</a><br><img src="images/dir1.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
-								
-								<li>Spacy English Large Model Version 3.5.0 (en_core_web_lg-3.5.0) could be installed and download from <a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.5.0" class="content-keywords">here.</a><br><img src="images/dir2.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
-								
-								<li>Sentence Bert Transformers (all-distilroberta-v1) model could be loaded from <a href="https://huggingface.co/sentence-transformers/all-distilroberta-v1" class="content-keywords">here.</a><br><img src="images/dir3.jpg" width="20%" height="20%" alt="Image" style="margin-left: 40px;"/></li>
-							</ul>
-
-						<p><img src="images/datadescribe.jpg" width="45%" height="40%" alt="Image" style="float:right; margin-left: 40px;"/><br>The original dataset consisted of 13 features and 1 label set. Timestamp were parsed into daily, monthly and yearly bins for visualization purposes. These represent some of the statistical insights for numerical features:</p><br><br><br><br><br><br>
-
-						
-						<h3 style="color: black;">Step 3: Feature Segmentation</h3><br>
-						<p>The feature set was categorized into categories such as: temporal, text, boolean, identifier, quanitative.</p><br>
-
-						
-						<h3 style="color: black;">Step 4: Univariate Analyis</h3><br>
-						<p><a target="_blank" href="images/label1.jpg"><img src="images/label1.jpg" alt="label1" style="float:right; border: 1px solid #ddd; border-radius: 4px; padding: 5px; width: 30%; height: 30%"></a>The labels were heavily unbalanced and the minority classes were too low in count.<br><br>To prevent fitting problems, the minority classes were binned into "cu_others" unified label.<br><br><br><br><br><br><br><br><br><br><br><a target="_blank" href="images/label2.jpg"><img src="images/label2.jpg" alt="label2" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 30%; height: 30%"></a>Finally the dataset was represented by three labels which were still heavily unbalanced but could be worked upon using re-sampling techniques.</p><br><br><br><br><br><br><br><br><br><br>
-
-						<p><br><a target="_blank" href="images/uni1.jpg"><img src="images/uni1.jpg" alt="uni1" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a>Over the years, the number of influencers and Official Public Handles tweeting using some of the terms related to CUBoulder such as Football, Basketball, Online, etc have reduced. This could be primarily due to the factor that most of the tweets belong to students and staff members, and since the hottest topic for the two years was "Research" this drop was expected.<br><br>Also there could be less activity from official public handles such as CUBoulder, CUEngineering, etc. <br><br>However, in the research wing, it could have been plausible that not many recognized or verified researchers were tweeting during the lockdown period.<br><br>It could be much precise to visualize trending #Hashtags across these years.</p><br><br><br>
-
-						<br><a target="_blank" href="images/uni2.jpg"><img src="images/uni2.jpg" alt="uni2" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a>Some of the most active verified Twitter handles could be found alongside in the chart. <br><br>CUBoulder and CUEngineering were found to be the top handles, while some verified individual account holders have been tweeting about CU Boulder too.</p><br><br><br><br>
-
-						<br><a target="_blank" href="images/uni3.jpg"><img src="images/uni3.jpg" alt="uni3" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 45%; height: 60%; margin-left: 20px;"></a>CUEngineering, CUBoulder and EarthLabCU seem to be the most frequent domains tweeting during the considered timeline.<br><br>Out of the top three public handles, CUEngineering, CUBoulder had a verified status (Blue tick) but EarthLabCU didn't have - a good pointer for CU Team to look into!<br><br>The first two could have been predicted, but it was interesting to note EarthLab at CU being the third most active domain during the considered two years.<br><br>Could the tweets be about Covid-19 given the time-period of 2020-2022 considered?<br><br>Were there some innovative ideas or recognized researches happening in the Earth Lab?</p><br>
-
-						<br><a target="_blank" href="images/uni4.jpg"><img src="images/uni4.jpg" alt="uni4" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 45%; margin-left: 20px;"></a>These were the top twitter users having the most reach and could have been tracked as potential key influencers, in a more generic sense.<br><br>Users such as "Mitchellbyars" and "ShellyMBoulder" seems to have a good following and their each tweet reaches about 33 people, which infact is great when compared to small active user-base.</p><br><br><br><br>
-
-						<br><a target="_blank" href="images/uni6.jpg"><img src="images/uni6.jpg" alt="uni6" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 40%; margin-left: 20px;"></a>"Research", "Covid19" and interestingly "Python" were some of the most common trending #Hashtags used over the two year period.</p><br><br><br><br><br><br><br>
-
-
-						<h3 style="color: black;">Step 5: Multivariate Analyis</h3><br>
-						<p><br><a target="_blank" href="images/bicorr.jpg"><img src="images/bicorr.jpg" alt="bicorr" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 50%; margin-left: 20px;"></a>As expected, Like-Count, Reply-Count, and Retweet-Count were found to be quite correlated.<br><br>Contrast to common belief, User-Followers-Count was found to be not at all correlated to the above three metrics.</p><br><br><br>
-
-						<p><br><a target="_blank" href="images/bi2.jpg"><img src="images/bi2.jpg" alt="bi2" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 50%; margin-left: 20px;"></a>The average number of followers (following account-owners) was a more wide-spread (bi-modal) and possibly counted for famous personalities.<br><br>The average number of people these twitter account-owners represented a more common and expected normal distribution (skewed) curve, since some handles would be following a lot more people as compared to few reserved handles.</p><br><br><br>
-
-						<p>Surprisngly, the number of tweets went down over the the two years. However, the number of retweets and likes tenfolded. It could have been due to recent events such as CUBuff Football team's poor performance and onbaording of Coach Prime Deion Sanders.<br><br>Events like transfers, ground-breaking research, alerts could have polarized the public sentiments.</p>
-						<a target="_blank" href="images/bi3.jpg"><img src="images/bi3.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 40%; margin-left: 20px;"></a><br>
-						<a target="_blank" href="images/bi4.jpg"><img src="images/bi4.jpg" alt="bi4" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 40%; margin-left: 20px;"></a><br>
-						<a target="_blank" href="images/bi5.jpg"><img src="images/bi5.jpg" alt="bi5" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 40%; margin-left: 20px;"></a><br><br>
-
-						
-						<h3 style="color: black;">Step 6: Missing Values</h3><br>
-						<p>No missing values were found in the considered dataset.</p><br>
-
-
-						<h3 style="color: black;">Step 7: Preprocessing Pipeline</h3><br>
-						<p>Based on above analysis, following pre-processing measures were considered for textual data:
-							<ul>
-								<li>Unicoding</li>
-								<li>Short-Text Twitter Tokenization</li>
-								<li>Expanding Contraction words</li>
-								<li>Language Detetion</li>
-								<li>Lematization/Stemming</li>
-								<li>Parts of Speech Tagging</li>
-								<li>Stopwords removal</li>
-								<li>Special characters removal</li>
-								<li>Emojis removal</li>
-								<li>Emoticons removal</li>
-								<li>Weblinks removal</li>
-								<li>Quick fixing of mis-spelled words (lexicon)</li>
-								<li>Custom vocabulary creation and retention from removal</li>
-								<li>Regluar Expressions parsing</li>
-								<li>Anchor text removal</li>
-								<li>Hashtags parsing</li>
-								<li>Greeting, saluation keywords removal</li>
-							</ul><br>
-
-						<p>Here's how the preprocessing pipeline performed, a comparison between bag-of-words before and after executing preprocessing :</p>
-							<a target="_blank" href="images/prepro.jpg"><img src="images/prepro.jpg" alt="prepro" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"></a><a target="_blank" href="images/postpro.jpg"><img src="images/postpro.jpg" alt="postpro" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 45%; margin-left: 20px;"></a><br><br><br>
-
-						<p>Here's the complete short-text cleaning pipeline applicable to geneal short texts: <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="content-keywords">link</a></p>
-						<p>Dimensions of dataset beofre preprocessing:  (3430, 14)</p>
-						<p>Dimensions of dataset beofre preprocessing:  (3394, 22)</p><br><br>
-
-						<h3 style="color: black;">Step 8: Vectorization</h3><br>
-						<p>Sentence Bert Transformers <a href="https://www.sbert.net/" class="content-keywords">sBert</a> was used for vectorizing processed tweet text into meaningful embeddings.</p>
-						<p>Complete code for vectorization could be found <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataVectorization.ipynb" class="content-keywords">here</a>.</p><br>
-					</div>
 				</section>
 				<!-- 3. EDA -->
 
@@ -335,11 +688,11 @@
 						<div id='detailsbox'>
 						  <div class='boxitem'>
 						  	<h4 class="boxitem-title">Published</h4>
-						    <p class="boxitem-stat">2 Feb 2023</p>
+						    <p class="boxitem-stat">21 Feb 2023</p>
 						  </div>
 						  <div class='boxitem'>
 						  	<h4 class="boxitem-title">Read Time</h4>
-						    <p class="boxitem-stat">15 Mins</p>
+						    <p class="boxitem-stat">35 Mins</p>
 						  </div>
 						  <div class='boxitem' style="border:none;">
 						  	<h4 class="boxitem-title">Version</h4>
@@ -347,21 +700,191 @@
 						  </div>
 						</div>
 						
-						<div class="features2">
-							<p>Definition!</p>
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-2" id="carousel_9ef1">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout">
+						            <div class="u-layout-row">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-justify u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"> Principal components analysis (PCA)&nbsp;refers to the process by which principal components are computed, and the subsequent use of these components in understanding the data.&nbsp;<br>
+						                        <br>PCA is an unsupervised approach, since it involves only a set of features 𝑋1,𝑋2,...,𝑋𝑝, and no associated response 𝑌.
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;"></span>
+						                        <span style="font-weight: 700;">When there are large number of features which may be correlated with each other (pair-plot), principal components analysis (PCA) allows us to summarize this set with a smaller number of representative variables that collectively explain most of the variability in the original set.</span>
+						                        <br>
+						                        <br>Apart from producing derived variables for use in supervised learning problems, PCA also serves as a tool for data visualization (visualization of the observations or visualization of the variables). It can also be used as a tool for data imputation — that is, for filling in missing values in a data matrix.
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5"> The code for <span style="font-weight: 700;">implementing PCA</span> by <span style="font-weight: 700;">hand</span> and using <span style="font-weight: 700;">scikit-learn</span> is here
+						                      </p>
+						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-1">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      </a>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-6">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-6">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-7">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-4">
+						                    <div class="u-container-layout u-container-layout-7">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-5">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-8">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-6" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-8"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-9"> &nbsp;Loading <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-10">
+						                        <span style="font-size: 18px;">Using a sample dataset - IRIS for PCA implementation.</span>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-7">
+						                    <div class="u-container-layout u-container-layout-10">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-8">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-11">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-9" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-11"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-12"> Standardize <span style="font-weight: 700;">data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-10">
+						                    <div class="u-container-layout u-container-layout-13">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-11">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-14">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-12" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-13"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-14"> Compute <span style="font-weight: 700;">C</span>
+						                            <span style="font-weight: 700;">ovariance Matrix</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-13">
+						                    <div class="u-container-layout u-container-layout-16">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-14">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-17">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-15" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-15"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-16">
+						                            <span style="font-weight: 700;">Eigenpiars</span> and <span style="font-weight: 700;">Eigen-vectors</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-16">
+						                    <div class="u-container-layout u-container-layout-19">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-17">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-20">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-18" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-17"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-18"> Compute <span style="font-weight: 700;">variation</span>
+						                            <span style="font-weight: 700;">explained</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-19">
+						                    <div class="u-container-layout u-container-layout-22">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-20">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-23">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-21" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-19">06</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-20"> Compute <span style="font-weight: 700;">loader vectors</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-22">
+						                    <div class="u-container-layout u-valign-top u-container-layout-25">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-23">
+						                        <div class="u-container-layout u-container-layout-26">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-24" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-21"> 07</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-22"> Calculate <span style="font-weight: 700;">principal components</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-text u-text-23">
+						                        <span style="font-weight: 700;"></span>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-28">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/pc1.jpg" alt="" data-image-width="964" data-image-height="930">
+						                  <img class="u-align-center u-image u-image-default u-image-2" src="images/pc2.jpg" alt="" data-image-width="1272" data-image-height="1092">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="images/pc3.jpg" alt="" data-image-width="1272" data-image-height="544">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-4" src="images/pc4.jpg" alt="" data-image-width="1558" data-image-height="1262">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/pc5.jpg" alt="" data-image-width="1556" data-image-height="1282">
+						                  <img class="u-align-center u-image u-image-default u-image-6" src="images/pc6.jpg" alt="" data-image-width="1932" data-image-height="1102">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/pc7.jpg" alt="" data-image-width="1422" data-image-height="932">
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
 						</div>
-						
-						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
-					</div>
-				</section>
 				<!-- 4. PCA -->
 
 				<!-- 5. Clustering -->
@@ -383,11 +906,342 @@
 						    <p class="boxitem-stat">1.0</p>
 						  </div>
 						</div>
-						
-						<div class="features2">
-							<p>Definition!</p>
+
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-2" id="sec-e571">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout">
+						            <div class="u-layout-row">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-justify u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3">
+						                        <span style="font-weight: 700;"></span>SOME<br>
+						                        <br>PCA is an unsupervised approach, since it involves only a set of features 𝑋1,𝑋2,...,𝑋𝑝, and no associated response 𝑌. <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;"></span>
+						                        <span style="font-weight: 700;">When there are large number of features which may be correlated with each other (pair-plot), principal components analysis (PCA) allows us to summarize this set with a smaller number of representative variables that collectively explain most of the variability in the original set.</span>
+						                        <br>
+						                        <br>Apart from producing derived variables for use in supervised learning problems, PCA also serves as a tool for data visualization (visualization of the observations or visualization of the variables). It can also be used as a tool for data imputation — that is, for filling in missing values in a data matrix.
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5"> The code for <span style="font-weight: 700;">implementing PCA</span> by <span style="font-weight: 700;">hand</span> and using <span style="font-weight: 700;">scikit-learn</span> is here
+						                      </p>
+						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-1">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      </a>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-6">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-6">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-7">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-4">
+						                    <div class="u-container-layout u-container-layout-7">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-5">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-8">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-6" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-8"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-9"> &nbsp;Loading <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-10">
+						                        <span style="font-size: 18px;">Using a sample dataset - IRIS for PCA implementation.</span>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-7">
+						                    <div class="u-container-layout u-container-layout-10">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-8">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-11">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-9" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-11"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-12"> Standardize <span style="font-weight: 700;">data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-10">
+						                    <div class="u-container-layout u-container-layout-13">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-11">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-14">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-12" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-13"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-14"> Compute <span style="font-weight: 700;">C</span>
+						                            <span style="font-weight: 700;">ovariance Matrix</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-13">
+						                    <div class="u-container-layout u-container-layout-16">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-14">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-17">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-15" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-15"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-16">
+						                            <span style="font-weight: 700;">Eigenpiars</span> and <span style="font-weight: 700;">Eigen-vectors</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-16">
+						                    <div class="u-container-layout u-container-layout-19">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-17">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-20">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-18" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-17"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-18"> Compute <span style="font-weight: 700;">variation</span>
+						                            <span style="font-weight: 700;">explained</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-19">
+						                    <div class="u-container-layout u-container-layout-22">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-20">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-23">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-21" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-19"> 06</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-20"> Compute <span style="font-weight: 700;">loader vectors</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-22">
+						                    <div class="u-container-layout u-valign-top u-container-layout-25">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-23">
+						                        <div class="u-container-layout u-container-layout-26">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-24" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-21"> 07</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-22"> Calculate <span style="font-weight: 700;">principal components</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-text u-text-23">
+						                        <span style="font-weight: 700;"></span>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-28">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/pc1.jpg" alt="" data-image-width="964" data-image-height="930">
+						                  <img class="u-align-center u-image u-image-default u-image-2" src="images/pc2.jpg" alt="" data-image-width="1272" data-image-height="1092">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="images/pc3.jpg" alt="" data-image-width="1272" data-image-height="544">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-4" src="images/pc4.jpg" alt="" data-image-width="1558" data-image-height="1262">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/pc5.jpg" alt="" data-image-width="1556" data-image-height="1282">
+						                  <img class="u-align-center u-image u-image-default u-image-6" src="images/pc6.jpg" alt="" data-image-width="1932" data-image-height="1102">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/pc7.jpg" alt="" data-image-width="1422" data-image-height="932">
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
 						</div>
 						
+						<div class="features2">
+							<p>
+								<span class="content-keywords2">What is Clustering ?</span><br><br>
+								Clustering is an unsupervised machine learning technique, which partitions the entire dataset into a fixed number of clusters or groups in such a way that observations in each group exhibit similar behavior or characteristics and are homogeneous. The observations in the same group are more similar than the observations in other groups.<br><br><br>
+						</div>
+						
+						<div class="content2">
+							<p>
+								<span class="content-keywords2">What is Clustering ?</span><br><br>Clustering is an unsupervised machine learning technique, which partitions the entire dataset into a fixed number of clusters or groups in such a way that observations in each group exhibit similar behavior or characteristics and are homogeneous. The observations in the same group are more similar than the observations in other groups.<br><br><br>
+								<img src="images/clus1.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 30%; height: 10%; margin-left: 20px;">
+							<p><br>
+
+							<p>
+								<span class="content-keywords2">Clustering Algorithms:</span><br><br>Based on the type of clustering algorithm used, there are different types of clustering methods:<br><br><br>
+								<img src="images/clus2.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 30%; height: 10%; margin-left: 20px;">
+							
+								<uL>
+									<p>
+										- Hierarchical clustering: It is a tree based clustering method where the observations are divided into a tree like structure using distance as a measure. <br><br>
+
+										- Centroid based clustering: In this method, the observations are partitioned into a predefined number of clusters (k) such that within cluster variances is minimum. k-means clustering is the most commonly used centroid based clustering algorithm. <br><br>
+
+										- Density-based clustering: In this method, the observations are grouped together based on density of points that are closely packed. DBSCAN and OPTICS are two popular density-based algorithms.<br><br>
+
+										- Distribution-based clustering: In this method, the observations are grouped based on the distribution models and observations in the same cluster are most likely coming from the same distribution. Gaussian mixture algorithm is an example of Distribution-based clustering.<br><br>
+									</p>
+								</uL>
+							</p><br>
+
+							<p>
+								<span class="content-keywords2">How similarity is measured?</span><br><br>Similarity is computed using some form of distance matrix, in linear or non-linear space. Some distance metrics which are commonly used are:<br><br>
+								
+								<img src="images/dist1.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 60%; margin-left: 20px;">
+								<img src="images/dist2.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 60%; margin-left: 20px;">
+								<img src="images/dist3.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 60%; margin-left: 20px;">
+								<img src="images/dist4.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 60%; height: 60%; margin-left: 20px;">
+							<p><br>
+						</div>
+
+						<div class="content2">
+							<p>
+								<span class="content-keywords2">Dataset for Clustering</span><br><br>
+								<img src="images/clus5.jpg" alt="bi3" style="border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 40%; height: 40%; margin-left: 20px;"><br><br>
+								The dataset consists of multiple features, but for the scope of clustering, this section focusses only on two features, "tweet", "and processed_tweet".
+							</p><br>
+
+							<p>
+								<span class="content-keywords2">Vectorization</span><br><br>
+								The pre-processed dataset consists of pre-processed tweets in English language. These tweets needs to be vectorized into numbers.There are various vectorization engines available in the market, such as: <br>
+								<ul>
+									<li>Tf-idf: Used for small corpus where the vocabulary can be contained.</li>
+									<li>class-Tf-idf: Enhanced tf-idf trained on Transformer encoder-decoder network, based on class-topics.</li>
+									<li>Word2Vec: Good for starting with embeddings in smaller text sentences.</li>
+									<li>Doc2Vec: Great option for vectorizing texts spanning across paragraphs.</li>
+									<li>Glove/Google/Stanfordnlp: Pretrained models for beginners.</li>
+									<li>Spacy: Industry applied and one of the most used quick-vectorizers.</li>
+									<li>Universal Sentence Encoder/FastAI: Google and Facebook trained embedders.</li>
+									<li>Transformers: State-of-the-art embedding networks, based on encoder-decoder architecture.</li>
+										<li>Fine-tuned with domain data, Roberta, Sentence-Bert, CardiffNLP are some of the most widely used deep learning embedders.</li>
+								</ul><br>
+
+								This project uses "Distilled-Roberta-Version1" which has been fine-tuned on twitter-data by cardiffnlp. It's a fine-tuned pre-trained model based on original Roberta. Each vector consists of 768 high-space dimensions. It could be found: <a href="https://huggingface.co/sentence-transformers/all-distilroberta-v1" class="content-keywords">here</a><br><br>
+
+								The complete code for vectorizing the dataset tweets could be found <span class="content-keywords"><a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataVectorization.ipynb">here</a></span><br><br>
+
+								A snapshot of vectorized text (embeddings) has been depicted alongside:<br>
+								<img src="images/clus6.jpg" alt="bi3" style="float:right; border: 1px solid #ddd;border-radius: 4px; padding: 5px; width: 50%; height: 40%; margin-left: 20px;"><br>
+
+								<span class="content-keywords">Context</span><br><br>
+								- An $embedding$ is a numerical representation of words, phrases, or sentences that captures the meaning and context (both semantic and syntactic) of the text in a high-dimensional space. <br><br>
+
+								- In the case of a document (one or more sentences), an $embedding$ represents the meaning of these sentences in a way that can be processed by machine learning models.<br><br>
+
+								- A $Transformer$ model is a type of neural network that is commonly used for natural language processing. One of the main features of the Transformer model is its ability to generate word embeddings that capture the meaning and context of a sentence. These embeddings are generated by processing the sentence through the layers of the Transformer model.<br><br>
+							
+								<span class="content-keywords">Project Embeddings</span><br><br>
+
+								- In our dataset (tweets) each sentence have been vectorized into a vector of [1 x 768] dimensions.<br><br>
+
+								- When we say that a text sentence is embedded into $768 \space dimensions$ by a pre-trained Transformer model, we mean that the sentence is **now represented as a vector of 768 numbers**, where each number in the vector corresponds to a different dimension in the embedding space. <br><br>
+								- These dimensions were learned by the Transformer model during training and represent different aspects of the meaning and context of the sentence.<br><br>
+								- For example, one dimension of the embedding vector might correspond to the presence of a certain topic or concept in the sentence, while another dimension might correspond to the sentiment or emotional tone of the sentence. By combining these different dimensions in a high-dimensional space, the Transformer model is able to capture the complex and nuanced meaning of a sentence.<br><br>
+								- In *extremely* simple words, 
+
+						            text      = "Coach Prime era has begun!"
+						                        
+						                        go  now coach prime have has  era  begin  end ....]
+						        word_vector   = [0  0   1     1     0    1    1    1      0   ....]     => One-Hot-Encoding
+						        
+						        topics        =   start  end   sentiment   complexity  presence_of_Adjective_followed_by_a_Noun ...
+						        
+						        embedding     =  [0.38   0      0.56         -0.32       0.87      0   ]
+						        
+						                      = a meaningful vector representing meaning & context of the sentence in 768 numbers.
+						    </p>
+						</div>
+						<div>
+							<section class="u-clearfix u-section-1" id="carousel_6414">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout">
+						            <div class="u-layout-row">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3">
+						                        <span style="font-weight: 700; font-size: 1.125rem;"> Data preprocessing</span>
+						                        <span style="font-size: 1.125rem;">&nbsp;is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data</span>.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-expanded-width u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;"> The</span> data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results.<br>
+						                        <br>To address this, the data was thoroughly&nbsp;cleaned, transformed, standardized, tokenized and vectorized. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-3 u-expanded-width u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <a href="https://nicepage.dev" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Download</a>
+						                      <p class="u-large-text u-text u-text-default u-text-variant u-text-5">Download the raw dataset</p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-3 u-expanded-width u-group u-group-4">
+						                    <div class="u-container-layout u-container-layout-6">
+						                      <a href="https://nicepage.dev" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">Download</a>
+						                      <p class="u-large-text u-text u-text-default u-text-variant u-text-6">Download the processed dataset</p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
+						</div>
+
+
 						<p>Something exciting is coming up! Stay tuned.</p>
 						
 						<div class="coding">
