@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/ml1.css" />
 		<link rel="stylesheet" href="assets/css/ml2.css" />
+		<link rel="stylesheet" href="assets/css/ml3.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
 		<!-- Favicons -->
@@ -238,440 +239,440 @@
 						<!-- BODY -->
 						<div class="u-body u-xl-mode">
 							<section class="u-clearfix u-section-1" id="sec-e571">
-							  <div class="u-clearfix u-sheet u-sheet-1">
-							    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-							      <div class="u-gutter-0 u-layout">
-							        <div class="u-layout-row">
-							          <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
-							            <div class="u-container-layout u-container-layout-1">
-							              <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
-							              <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
-							              <div class="u-align-justify u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
-							                <div class="u-container-layout u-container-layout-2">
-							                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"> Data preprocessing&nbsp;is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data.&nbsp;</p>
-							                </div>
-							              </div>
-							            </div>
-							          </div>
-							          <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-							            <div class="u-container-layout u-container-layout-3">
-							              <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
-							                <div class="u-container-layout u-container-layout-4">
-							                  <p class="u-heading-font u-text u-text-default u-text-4">
-							                    <span style="font-weight: 700;"></span>
-							                    <span style="font-weight: 700;">The&nbsp;data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results.</span>
-							                    <br>
-							                    <br>To address this, the data was thoroughly&nbsp;cleaned, transformed, standardized, tokenized and vectorized. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
-							                <div class="u-container-layout u-container-layout-5">
-							                  <p class="u-large-text u-text u-text-variant u-text-5">Download the <span style="font-weight: 700;">raw dataset</span>
-							                  </p>
-							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/raw_cuboulder_Intents_TwitterData_2020_02_05_2022-12-31.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
-							                </div>
-							              </div>
-							              <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-4">
-							                <div class="u-container-layout u-container-layout-6">
-							                  <p class="u-large-text u-text u-text-variant u-text-6">Download the <span style="font-weight: 700;">processed</span>&nbsp;<span style="font-weight: 700;">dataset</span>
-							                  </p>
-							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/processed_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-2">DOWNLOAD</a>
-							                </div>
-							              </div>
-							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-5">
-							                <div class="u-container-layout u-container-layout-7">
-							                  <p class="u-large-text u-text u-text-variant u-text-7"> The&nbsp;
-							                    <span style="font-weight: 700;">EDA <span style="font-weight: 400;">and</span> Preprocessing
-							                    </span>&nbsp;code can be found here
-							                  </p>
-							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-3">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
-							                  </a>
-							                </div>
-							              </div>
-							            </div>
-							          </div>
-							        </div>
-							      </div>
-							    </div>
-							    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
-							      <div class="u-gutter-0 u-layout" style="">
-							        <div class="u-layout-row" style="">
-							          <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
-							            <div class="u-container-layout u-container-layout-8">
-							              <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-8">02</h1>
-							              <h3 class="u-custom-font u-font-montserrat u-text u-text-9">process</h3>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-6">
-							                <div class="u-container-layout u-container-layout-9">
-							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-7">
-							                    <div class="u-container-layout u-valign-middle u-container-layout-10">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-8" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-10"> 01</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-11"> Loading&nbsp;<span style="font-weight: 700;">Packages</span>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-12">
-							                    <span style="font-size: 18px;"></span>For the scope of the project, here are the two necessary setup files required to run the project code:<br>
-							                    <br>1. Python Requirements:&nbsp;<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/Requirements.txt" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">Requirements.txt</a>
-							                    <br>2. Anaconda Environment<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/virtual_environment.yml" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">&nbsp;virtual_environment.yml</a>
-							                    <br>
-							                    <br>
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-9">
-							                <div class="u-container-layout u-container-layout-12">
-							                  <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-10">
-							                    <div class="u-container-layout u-container-layout-13">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-11" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-13"> 02</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-14"> Loading&nbsp;<span style="font-weight: 700;">Resources&nbsp;and&nbsp;Data</span>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-15">A lot of generic and specific resouces were required to run the project. A general directory architecture for the project setup looked like:<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>Contents of Resources directory could be found<a href="https://github.com/pranzell/pranzell.github.io/tree/master/source/models/resources" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">&nbsp;here.</a>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>Spacy English Large Model Version 3.5.0 (en_core_web_lg-3.5.0) could be installed and download from&nbsp;<a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.5.0" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7">here.</a>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>Sentence Bert Transformers (all-distilroberta-v1) model could be loaded from&nbsp;<a href="https://huggingface.co/sentence-transformers/all-distilroberta-v1" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8">here.</a>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>The original dataset consisted of 13 features and 1 label set. Timestamp were parsed into daily, monthly and yearly bins for visualization purposes.&nbsp;<br>
-							                    <br>
-							                    <br>These represent some of the statistical insights for numerical features:<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-12">
-							                <div class="u-container-layout u-container-layout-15">
-							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-13">
-							                    <div class="u-container-layout u-valign-middle u-container-layout-16">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-14" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-16"> 03</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-17"> Feature&nbsp;<span style="font-weight: 700;">Segmentation</span>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-18">
-							                    <span style="font-size: 18px;"></span>The feature set was categorized into categories such as: <span style="font-weight: 700; font-style: italic;">temporal, text, boolean, identifier, quantitative.</span>
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-15">
-							                <div class="u-container-layout u-container-layout-18">
-							                  <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-16">
-							                    <div class="u-container-layout u-container-layout-19">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-17" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-19"> 04</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-20"> Univariate&nbsp;<b>Analysis</b>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-21">
-							                    <span style="font-size: 18px;"></span>The labels were heavily unbalanced and the minority classes were too low in count.<br>
-							                    <br>To prevent fitting problems, the minority classes were binned into "cu_others" unified label.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>Finally the dataset was represented by three labels which were still heavily unbalanced but could be worked upon using re-sampling techniques.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>Over the years, the number of influencers and Official Public Handles tweeting using some of the terms related to CUBoulder such as Football, Basketball, Online, etc have reduced. This could be primarily due to the factor that most of the tweets belong to students and staff members, and since the hottest topic for the two years was "Research" this drop was expected.<br>
-							                    <br>Also there could be less activity from official public handles such as CUBoulder, CUEngineering, etc.<br>
-							                    <br>However, in the research wing, it could have been plausible that not many recognized or verified researchers were tweeting during the lockdown period.<br>
-							                    <br>It could be much precise to visualize trending #Hashtags across these years.<br>
-							                    <br>
-							                    <br>Some of the most active verified Twitter handles could be found alongside in the chart.<br>
-							                    <br>CUBoulder and CUEngineering were found to be the top handles, while some verified individual account holders have been tweeting about CU Boulder too.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>CUEngineering, CUBoulder and EarthLabCU seem to be the most frequent domains tweeting during the considered timeline.<br>
-							                    <br>Out of the top three public handles, CUEngineering, CUBoulder had a verified status (Blue tick) but EarthLabCU didn't have - a good pointer for CU Team to look into!<br>
-							                    <br>The first two could have been predicted, but it was interesting to note EarthLab at CU being the third most active domain during the considered two years.<br>
-							                    <br>
-							                    <span style="font-weight: 700; font-size: 0.875rem;">Could the tweets be about Covid-19 given the time-period of 2020-2022 considered?<br>
-							                      <br>Were there some innovative ideas or recognized researches happening in the Earth Lab?
-							                    </span>
-							                    <br>
-							                    <br>
-							                    <br>These were the top twitter users having the most reach and could have been tracked as potential key influencers, in a more generic sense.<br>
-							                    <br>Users such as "Mitchellbyars" and "ShellyMBoulder" seems to have a good following and their each tweet reaches about 33 people, which infact is great when compared to small active user-base.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>"Research", "Covid19" and interestingly "Python" were some of the most common trending #Hashtags used over the two year period.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-18">
-							                <div class="u-container-layout u-container-layout-21">
-							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-19">
-							                    <div class="u-container-layout u-valign-middle u-container-layout-22">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-20" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-22"> 05</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-23"> Multivariate&nbsp;<b>Analysis</b>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-24">
-							                    <span style="font-size: 18px;"></span>As expected, Like-Count, Reply-Count, and Retweet-Count were found to be quite correlated.<br>
-							                    <br>Contrast to common belief, User-Followers-Count was found to be not at all correlated to the above three metrics.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>The average number of followers (following account-owners) was a more wide-spread (bi-modal) and possibly counted for famous personalities.<br>
-							                    <br>The average number of people these twitter account-owners represented a more common and expected normal distribution (skewed) curve, since some handles would be following a lot more people as compared to few reserved handles.<br>
-							                    <br>
-							                    <br>
-							                    <br>Surprisngly, the number of tweets went down over the the two years.&nbsp;<br>However, the number of retweets and likes ten folded. It could have been due to recent events such as CUBuff Football team's poor performance and onboarding of Coach Prime Deion Sanders.<br>
-							                    <br>Events like transfers, ground-breaking research, alerts could have polarized the public sentiments.<br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                    <br>
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-21">
-							                <div class="u-container-layout u-container-layout-24">
-							                  <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-22">
-							                    <div class="u-container-layout u-valign-middle u-container-layout-25">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-23" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-25"> 06</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-26"> Missing&nbsp;<span style="font-weight: 700;">Values</span>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-27">
-							                    <span style="font-size: 18px;"></span>The feature set was categorized into categories such as: temporal, text, boolean, identifier, quantitative.
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-24">
-							                <div class="u-container-layout u-container-layout-27">
-							                  <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-25">
-							                    <div class="u-container-layout u-container-layout-28">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-26" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-28"> 07</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-29"> Preprocessing&nbsp;<span style="font-weight: 700;">Pipeline</span>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-30">
-							                    <span style="font-size: 18px;"></span>Based on above analysis, following pre-processing measures were considered for textual data:<br>
-							                    <br>
-							                    <br>-&nbsp; Unicoding<br>-&nbsp; Short-Text Twitter Tokenization<br>-&nbsp; Expanding Contraction words<br>-&nbsp; Language Detection<br>-&nbsp; Lemmatization/Stemming<br>-&nbsp; Parts of Speech Tagging<br>-&nbsp; Stopwords removal<br>-&nbsp; Special characters removal<br>-&nbsp; Emojis removal<br>-&nbsp; Emoticons removal<br>-&nbsp; Weblinks removal<br>-&nbsp; Quick fixing of mis-spelled words (lexicon)<br>-&nbsp; Custom vocabulary creation and retention from removal<br>-&nbsp; Regular Expressions parsing<br>-&nbsp; Anchor text removal<br>-&nbsp; Hashtags parsing<br>-&nbsp; Greeting, salutation keywords removal<br>
-							                    <br>
-							                    <br>
-							                    <br>Here's how the preprocessing pipeline performed, a comparison between bag-of-words&nbsp;before&nbsp;and&nbsp;after&nbsp;executing&nbsp;preprocessing.<br>
-							                    <br>-&nbsp; Dimensions of dataset before preprocessing:&nbsp;(3430, 14)<br>-&nbsp; Dimensions of dataset after preprocessing:&nbsp;(3394, 22)<br>
-							                    <br>
-							                  </p>
-							                </div>
-							              </div>
-							              <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-27">
-							                <div class="u-container-layout u-container-layout-30">
-							                  <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-28">
-							                    <div class="u-container-layout u-container-layout-31">
-							                      <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-29" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
-							                        <div class="u-container-layout u-valign-middle">
-							                          <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-31"> 08</h2>
-							                        </div>
-							                      </div>
-							                      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-32"> Text&nbsp; <span style="font-weight: 700;">Vectorization</span>
-							                      </p>
-							                    </div>
-							                  </div>
-							                  <p class="u-custom-font u-heading-font u-text u-text-33">
-							                    <span style="font-size: 18px;"></span>Sentence Bert Transformers&nbsp;<a href="https://www.sbert.net/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9">sBert</a>&nbsp;was used for vectorizing processed tweet text into meaningful embeddings.<br>
-							                    <br>
-							                    <br>
-							                  </p>
-							                </div>
-							              </div>
-							            </div>
-							          </div>
-							          <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
-							            <div class="u-container-layout u-container-layout-33">
-							              <img class="u-align-center u-image u-image-default u-image-1" src="images/dirstr.jpg" alt="" data-image-width="1226" data-image-height="788">
-							              <img class="u-align-center u-image u-image-default u-image-2" src="images/dir1.jpg" alt="" data-image-width="1226" data-image-height="788">
-							              <img class="u-align-center u-image u-image-default u-image-3" src="images/dir2.jpg" alt="" data-image-width="1226" data-image-height="788">
-							              <img class="u-align-center u-image u-image-default u-image-4" src="images/dir3.jpg" alt="" data-image-width="1226" data-image-height="788">
-							              <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/datadescribe.jpg" alt="" data-image-width="1192" data-image-height="448">
-							              <img class="u-align-center u-image u-image-contain u-image-default u-image-6" src="images/label1.jpg" alt="" data-image-width="1454" data-image-height="1104">
-							              <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/label2.jpg" alt="" data-image-width="700" data-image-height="544">
-							              <img class="u-image u-image-contain u-image-default u-image-8" src="images/uni1.jpg" alt="" data-image-width="1614" data-image-height="1250">
-							              <img class="u-image u-image-contain u-image-default u-image-9" src="images/uni2.jpg" alt="" data-image-width="1266" data-image-height="520">
-							              <img class="u-image u-image-contain u-image-default u-image-10" src="images/uni3.jpg" alt="" data-image-width="1596" data-image-height="744">
-							              <img class="u-image u-image-contain u-image-default u-image-11" src="images/uni4.jpg" alt="" data-image-width="1596" data-image-height="686">
-							              <img class="u-image u-image-contain u-image-default u-image-12" src="images/uni6.jpg" alt="" data-image-width="1590" data-image-height="554">
-							              <img class="u-image u-image-contain u-image-default u-image-13" src="images/bicorr.jpg" alt="" data-image-width="1602" data-image-height="544">
-							              <img class="u-image u-image-contain u-image-default u-image-14" src="images/bi2.jpg" alt="" data-image-width="1602" data-image-height="544">
-							              <img class="u-image u-image-contain u-image-default u-image-15" src="images/bi3.jpg" alt="" data-image-width="1580" data-image-height="504">
-							              <img class="u-image u-image-contain u-image-default u-image-16" src="images/bi4.jpg" alt="" data-image-width="1580" data-image-height="504">
-							              <img class="u-image u-image-contain u-image-default u-image-17" src="images/bi5.jpg" alt="" data-image-width="1580" data-image-height="504">
-							              <img class="u-image u-image-contain u-image-default u-image-18" src="images/prepro.jpg" alt="" data-image-width="1164" data-image-height="626">
-							              <img class="u-image u-image-contain u-image-default u-image-19" src="images/postpro.jpg" alt="" data-image-width="1164" data-image-height="626">
-							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-30">
-							                <div class="u-container-layout u-container-layout-34">
-							                  <p class="u-large-text u-text u-text-variant u-text-34"> The
-							                    <span style="font-weight: 700;">EDA <span style="font-weight: 400;">and</span> Preprocessing
-							                    </span>&nbsp;code can be found here
-							                  </p>
-							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-10">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
-							                  </a>
-							                </div>
-							              </div>
-							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-31">
-							                <div class="u-container-layout u-container-layout-35">
-							                  <p class="u-large-text u-text u-text-variant u-text-35"> Code for&nbsp;<span style="font-weight: 700;">data&nbsp;vectorization</span>&nbsp;is here
-							                  </p>
-							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataVectorization.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-11">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
-							                  </a>
-							                </div>
-							              </div>
-							            </div>
-							          </div>
-							        </div>
-							      </div>
-							    </div>
-							  </div>
-							</section>
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout">
+						            <div class="u-layout-row">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"> Data preprocessing&nbsp;is a crucial step in the analysis process, as it helps to ensure that the data is in a format suitable for analysis and eliminates any errors. For the scope of this project, data preprocessing was critically important to ensure the reliability and accuracy of the twitter meta-data.&nbsp;</p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;"></span>
+						                        <span style="font-weight: 700;">The&nbsp;data obtained contained several irrelevant information, duplicates, and inconsistencies in the format, which could have affected the results.</span>
+						                        <br>
+						                        <br>To address this, the data was thoroughly&nbsp;cleaned, transformed, standardized, tokenized and vectorized. This also involved removing irrelevant information, dealing with missing values, and handling outliers such as tweets containing only hashtags, (or anomalies).
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5">Download the <span style="font-weight: 700;">raw dataset</span>
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/raw_cuboulder_Intents_TwitterData_2020_02_05_2022-12-31.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-4">
+						                    <div class="u-container-layout u-container-layout-6">
+						                      <p class="u-large-text u-text u-text-variant u-text-6">Download the <span style="font-weight: 700;">processed</span>&nbsp;<span style="font-weight: 700;">dataset</span>
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/processed_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-2">DOWNLOAD</a>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-5">
+						                    <div class="u-container-layout u-container-layout-7">
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-3">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
+						                      </a>
+						                      <p class="u-large-text u-text u-text-variant u-text-7"> The&nbsp;<span style="font-weight: 700;">E</span>
+						                        <span style="font-weight: 700;">DA <span style="font-weight: 400;">and</span> Preprocessing
+						                        </span>&nbsp;code can be downloaded from here
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-8">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-8">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-9">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-6">
+						                    <div class="u-container-layout u-container-layout-9">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-7">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-10">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-8" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-10"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-11"> Loading&nbsp;<span style="font-weight: 700;">Packages</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-12">
+						                        <span style="font-size: 18px;"></span>For the scope of the project, here are the two necessary setup files required to run the project code:<br>
+						                        <br>1. Python Requirements:&nbsp;<a href="pranzell/pranzell.github.io/blob/master/source/Requirements.txt" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">Requirements.txt</a>
+						                        <br>2. Anaconda Environment<a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/virtual_environment.yml" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">&nbsp;virtual_environment.yml</a>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-9">
+						                    <div class="u-container-layout u-container-layout-12">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-10">
+						                        <div class="u-container-layout u-container-layout-13">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-11" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-13"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-14"> Loading&nbsp;<span style="font-weight: 700;">Resources&nbsp;and&nbsp;Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-15">A lot of generic and specific resouces were required to run the project. A general directory architecture for the project setup looked like:<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>Contents of Resources directory could be found<a href="https://github.com/pranzell/pranzell.github.io/tree/master/source/models/resources" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">&nbsp;here.</a>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>Spacy English Large Model Version 3.5.0 (en_core_web_lg-3.5.0) could be installed and download from&nbsp;<a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-3.5.0" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-7">here.</a>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>Sentence Bert Transformers (all-distilroberta-v1) model could be loaded from&nbsp;<a href="https://huggingface.co/sentence-transformers/all-distilroberta-v1" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-8">here.</a>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>The original dataset consisted of 13 features and 1 label set. Timestamp were parsed into daily, monthly and yearly bins for visualization purposes.&nbsp;<br>
+						                        <br>
+						                        <br>These represent some of the statistical insights for numerical features:<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-12">
+						                    <div class="u-container-layout u-container-layout-15">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-13">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-16">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-14" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-16"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-17"> Feature&nbsp;<span style="font-weight: 700;">Segmentation</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-18">
+						                        <span style="font-size: 18px;"></span>The feature set was categorized into categories such as: <span style="font-weight: 700; font-style: italic;">temporal, text, boolean, identifier, quantitative.</span>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-15">
+						                    <div class="u-container-layout u-container-layout-18">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-16">
+						                        <div class="u-container-layout u-container-layout-19">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-17" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-19"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-20"> Univariate&nbsp;<b>Analysis</b>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-21">
+						                        <span style="font-size: 18px;"></span>The labels were heavily unbalanced and the minority classes were too low in count.<br>
+						                        <br>To prevent fitting problems, the minority classes were binned into "cu_others" unified label.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>Finally the dataset was represented by three labels which were still heavily unbalanced but could be worked upon using re-sampling techniques.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>Over the years, the number of influencers and Official Public Handles tweeting using some of the terms related to CUBoulder such as Football, Basketball, Online, etc have reduced. This could be primarily due to the factor that most of the tweets belong to students and staff members, and since the hottest topic for the two years was "Research" this drop was expected.<br>
+						                        <br>Also there could be less activity from official public handles such as CUBoulder, CUEngineering, etc.<br>
+						                        <br>However, in the research wing, it could have been plausible that not many recognized or verified researchers were tweeting during the lockdown period.<br>
+						                        <br>It could be much precise to visualize trending #Hashtags across these years.<br>
+						                        <br>
+						                        <br>Some of the most active verified Twitter handles could be found alongside in the chart.<br>
+						                        <br>CUBoulder and CUEngineering were found to be the top handles, while some verified individual account holders have been tweeting about CU Boulder too.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>CUEngineering, CUBoulder and EarthLabCU seem to be the most frequent domains tweeting during the considered timeline.<br>
+						                        <br>Out of the top three public handles, CUEngineering, CUBoulder had a verified status (Blue tick) but EarthLabCU didn't have - a good pointer for CU Team to look into!<br>
+						                        <br>The first two could have been predicted, but it was interesting to note EarthLab at CU being the third most active domain during the considered two years.<br>
+						                        <br>
+						                        <span style="font-weight: 700; font-size: 0.875rem;">Could the tweets be about Covid-19 given the time-period of 2020-2022 considered?<br>
+						                          <br>Were there some innovative ideas or recognized researches happening in the Earth Lab?
+						                        </span>
+						                        <br>
+						                        <br>
+						                        <br>These were the top twitter users having the most reach and could have been tracked as potential key influencers, in a more generic sense.<br>
+						                        <br>Users such as "Mitchellbyars" and "ShellyMBoulder" seems to have a good following and their each tweet reaches about 33 people, which infact is great when compared to small active user-base.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>"Research", "Covid19" and interestingly "Python" were some of the most common trending #Hashtags used over the two year period.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-18">
+						                    <div class="u-container-layout u-container-layout-21">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-19">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-22">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-20" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-22"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-23"> Multivariate&nbsp;<b>Analysis</b>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-24">
+						                        <span style="font-size: 18px;"></span>As expected, Like-Count, Reply-Count, and Retweet-Count were found to be quite correlated.<br>
+						                        <br>Contrast to common belief, User-Followers-Count was found to be not at all correlated to the above three metrics.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>The average number of followers (following account-owners) was a more wide-spread (bi-modal) and possibly counted for famous personalities.<br>
+						                        <br>The average number of people these twitter account-owners represented a more common and expected normal distribution (skewed) curve, since some handles would be following a lot more people as compared to few reserved handles.<br>
+						                        <br>
+						                        <br>
+						                        <br>Surprisngly, the number of tweets went down over the the two years.&nbsp;<br>However, the number of retweets and likes ten folded. It could have been due to recent events such as CUBuff Football team's poor performance and onboarding of Coach Prime Deion Sanders.<br>
+						                        <br>Events like transfers, ground-breaking research, alerts could have polarized the public sentiments.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-21">
+						                    <div class="u-container-layout u-container-layout-24">
+						                      <div class="u-container-style u-gradient u-group u-radius-16 u-shape-round u-group-22">
+						                        <div class="u-container-layout u-valign-middle u-container-layout-25">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-23" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-25"> 06</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-26"> Missing&nbsp;<span style="font-weight: 700;">Values</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-27">
+						                        <span style="font-size: 18px;"></span>The feature set was categorized into categories such as: temporal, text, boolean, identifier, quantitative.
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-24">
+						                    <div class="u-container-layout u-container-layout-27">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-25">
+						                        <div class="u-container-layout u-container-layout-28">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-26" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-28"> 07</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-29"> Preprocessing&nbsp;<span style="font-weight: 700;">Pipeline</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-30">
+						                        <span style="font-size: 18px;"></span>Based on above analysis, following pre-processing measures were considered for textual data:<br>
+						                        <br>
+						                        <br>-&nbsp; Unicoding<br>-&nbsp; Short-Text Twitter Tokenization<br>-&nbsp; Expanding Contraction words<br>-&nbsp; Language Detection<br>-&nbsp; Lemmatization/Stemming<br>-&nbsp; Parts of Speech Tagging<br>-&nbsp; Stopwords removal<br>-&nbsp; Special characters removal<br>-&nbsp; Emojis removal<br>-&nbsp; Emoticons removal<br>-&nbsp; Weblinks removal<br>-&nbsp; Quick fixing of mis-spelled words (lexicon)<br>-&nbsp; Custom vocabulary creation and retention from removal<br>-&nbsp; Regular Expressions parsing<br>-&nbsp; Anchor text removal<br>-&nbsp; Hashtags parsing<br>-&nbsp; Greeting, salutation keywords removal<br>
+						                        <br>
+						                        <br>
+						                        <br>Here's how the preprocessing pipeline performed, a comparison between bag-of-words&nbsp;before&nbsp;and&nbsp;after&nbsp;executing&nbsp;preprocessing.<br>
+						                        <br>-&nbsp; Dimensions of dataset before preprocessing:&nbsp;(3430, 14)<br>-&nbsp; Dimensions of dataset after preprocessing:&nbsp;(3394, 22)<br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-27">
+						                    <div class="u-container-layout u-container-layout-30">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-28">
+						                        <div class="u-container-layout u-container-layout-31">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-29" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-31"> 08</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-32"> Text&nbsp; <span style="font-weight: 700;">Vectorization</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-33">
+						                        <span style="font-size: 18px;"></span>Sentence Bert Transformers&nbsp;<a href="https://www.sbert.net/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-9">sBert</a>&nbsp;was used for vectorizing processed tweet text into meaningful embeddings.<br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-33">
+						                  <img class="u-align-center u-image u-image-default u-image-1" src="images/dirstr.jpg" alt="" data-image-width="1226" data-image-height="788">
+						                  <img class="u-align-center u-image u-image-default u-image-2" src="images/dir1.jpg" alt="" data-image-width="1226" data-image-height="788">
+						                  <img class="u-align-center u-image u-image-default u-image-3" src="images/dir2.jpg" alt="" data-image-width="1226" data-image-height="788">
+						                  <img class="u-align-center u-image u-image-default u-image-4" src="images/dir3.jpg" alt="" data-image-width="1226" data-image-height="788">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/datadescribe.jpg" alt="" data-image-width="1192" data-image-height="448">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-6" src="images/label1.jpg" alt="" data-image-width="1454" data-image-height="1104">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/label2.jpg" alt="" data-image-width="700" data-image-height="544">
+						                  <img class="u-image u-image-contain u-image-default u-image-8" src="images/uni1.jpg" alt="" data-image-width="1614" data-image-height="1250">
+						                  <img class="u-image u-image-contain u-image-default u-image-9" src="images/uni2.jpg" alt="" data-image-width="1266" data-image-height="520">
+						                  <img class="u-image u-image-contain u-image-default u-image-10" src="images/uni3.jpg" alt="" data-image-width="1596" data-image-height="744">
+						                  <img class="u-image u-image-contain u-image-default u-image-11" src="images/uni4.jpg" alt="" data-image-width="1596" data-image-height="686">
+						                  <img class="u-image u-image-contain u-image-default u-image-12" src="images/uni6.jpg" alt="" data-image-width="1590" data-image-height="554">
+						                  <img class="u-image u-image-contain u-image-default u-image-13" src="images/bicorr.jpg" alt="" data-image-width="1602" data-image-height="544">
+						                  <img class="u-image u-image-contain u-image-default u-image-14" src="images/bi2.jpg" alt="" data-image-width="1602" data-image-height="544">
+						                  <img class="u-image u-image-contain u-image-default u-image-15" src="images/bi3.jpg" alt="" data-image-width="1580" data-image-height="504">
+						                  <img class="u-image u-image-contain u-image-default u-image-16" src="images/bi4.jpg" alt="" data-image-width="1580" data-image-height="504">
+						                  <img class="u-image u-image-contain u-image-default u-image-17" src="images/bi5.jpg" alt="" data-image-width="1580" data-image-height="504">
+						                  <img class="u-image u-image-contain u-image-default u-image-18" src="images/prepro.jpg" alt="" data-image-width="1164" data-image-height="626">
+						                  <img class="u-image u-image-contain u-image-default u-image-19" src="images/postpro.jpg" alt="" data-image-width="1164" data-image-height="626">
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-30">
+						                    <div class="u-container-layout u-container-layout-34">
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-10">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="data:image/png;base64,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" alt=""></span>
+						                      </a>
+						                      <p class="u-large-text u-text u-text-variant u-text-34"> The&nbsp;<span style="font-weight: 700;">E</span>
+						                        <span style="font-weight: 700;">DA <span style="font-weight: 400;">and</span> Preprocessing
+						                        </span>&nbsp;code can be downloaded from here
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-31">
+						                    <div class="u-container-layout u-container-layout-35">
+						                      <p class="u-large-text u-text u-text-variant u-text-35"> Code for&nbsp;<span style="font-weight: 700;">data&nbsp;vectorization</span>&nbsp;is here
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataVectorization.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-11">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABl5JREFUeF7tnTmoZEUUhr9RA4NxARVHVMTAHVNxCRRBcd8CA3fRQFRkQFFwRUUDFwwEQRTcAxP3BRUUEwUTDdwFDRQMXREDN/7hPnzT0327bnfVreo5f2WPV8s5//n7LHXr3tqAW2gENoTW3spjAgQngQlgAgRHILj69gAmQHAEgqtvD2ACBEcguPr2ACZAcASCq28PYAIERyC4+vYAJkBwBIKrbw9gAgRHILj69gAmQHAEgqtvD2AChETgCOAe4NhO+w+AW4DPoqER0QMcBbwP7Dxh7D+B44GPIpEgIgHeBk6aYeR3gJNNgO0bgd+AjTNU/B3YZftWf2vtInqAf+cYOBQmoZTtDG8CrPsFmADbuoNQmIRS1h4gONtNABNACDgHcA7QWweECouhlHUIcAhwCJjggD1A8B+FCWACRNr53qKrqwBXAa4C1hBwCHAIcAiInBjbA9gD2APYA8TigKsAVwGuAlwFzOZAqLwolLJ+GBQ84zUBTABvBUcueewB7AHsAewB/DRwPQdcBQT3iiaACRBrH9gHQra2tz2APYA9QOTE2B7AHsAewB4gFgd8HsDnAXwewOcBfB5gCwJOAp0ExkoAvBHkjSAngU4CnQQ6CXQS6CRwBgdCJcahlPWRsOAlzwgEOADYHfgG+GMV6qtV8QCS8wLgcmBP4EPgPuC7BUAuUQUcCjwBHN3Jo49OPwDclVB2LqBCviGrQoDHgCsn1P4VuAR4eSAcuQlwNvA0sOsUOe4Gbh8o36jdV4EAZ/UYWcYUyHcC/yQil4sAOwB3ALf17KjqEopNwC+Jso3ebRUI8Fzn/vvAeQ24KBHoHATYDXgWOCPBYscBupKmybYKBHgPOCEBva+Bc4HP5/RdlgCHAy8CByfIpC5HAp8m9h292yoQ4H7ghkRkdBvIpZ2BZg1ZhgAi2FMDbhX5AtAFVfPWTFQvf7dVIMDewMfAPonqC2zdCKb4PC0vmGeMaZgo3ivP0M1iqZgp7uv+oaYvoUpVJhH7Yt1UZr0EHDJghde7vODniTFDCaC6XvH+9AFrfwWcA3w5YEyVrrkIMMY9fEq8ngHOHICUNmRkiPV5wRACKN6LeAcNWPNV4OLEhDR12mL45iDAmPfwpZRek6AqL7gMeKH7RyoBzgOeHBDvFylJUwhQFN8cBKhxD1/f5ss0UGWce7tNmb/noL5jt4N384B4v+imVAoBiuKbgwC17uE7rMv2h+QFbwCnzUE9pc/6KRTvVR0o4y/RiuKbgwCpLrUEOLrkUWWZDFCjiSwXApOJZk5ZiuK76gQQ0NLhxs7FK0cYo8koehilMJG6Bb2oXCZAInIq01SuqWwr2SaTypJraW4TYADC2p7VNq3KtxJNZaXCzZjXzJsAAy1ZKi8YI95PU9UEGEiA3HnBmPHeBFjA2H1Dls0Lxo73JkBmAmi6RfOCGvHeBChAAE05NC+oFe9NgEIESM0Lasd7E6AgAdamnpUXtBDvTYARCKAlDuwe+JzYbbS82x0gWeSYeWmRXQaWRrjx+U2Axg1UWjwToDTCjc9vAjRuoNLiNU8AnYZRnT2r6ZUpZdhuwxHQOci+swbCddorackr5TgPoBMxfS9J6OmZDla6DUfgfOD5nmHCXiemF245CPAmcMocIY8BflpYypgD9wA+AfbrUV87lkOOq28zVQ4CXAs8PMdG3wPXA28BChlu/SFTP6gH5xhfM1wDPLIMmDkIsH/3nr5O07qNh8Bf3YbWD8ssmYMAWv9x4IplBPHYwQg8Clw1eNTEgFwE2Lc7Ft1XDSwrq8f/j4DCqJK/H5cFJRcBJMepgF6LcihY1ir943UKWa+7CeulW04CSJjrgIeAsY5nLw3Aik0g429OSLqT1cpNAC2sT7roeLbDQbIZkjrK7eslFH0NJVsrQQAJtxdwK3A1sFM2aWNOpF+9PpNzU46YPwlhKQKsraNNDL3Iqc0KPYPX3xtj2jFZa31iTqXdt4C+cfBK93fyBEM6libAEFnctwICJkAF0Fta0gRoyRoVZDEBKoDe0pImQEvWqCCLCVAB9JaWNAFaskYFWUyACqC3tKQJ0JI1KshiAlQAvaUlTYCWrFFBFhOgAugtLWkCtGSNCrKYABVAb2lJE6Ala1SQxQSoAHpLS5oALVmjgiwmQAXQW1rSBGjJGhVkMQEqgN7Skv8BmIUVkAdyu/YAAAAASUVORK5CYII=" alt=""></span>
+						                      </a>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
 						</div>
 				</section>
 				<!-- 3. EDA -->
@@ -708,7 +709,7 @@
 						                <div class="u-container-layout u-container-layout-1">
 						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
 						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
-						                  <div class="u-align-justify u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
 						                    <div class="u-container-layout u-container-layout-2">
 						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"> Principal components analysis (PCA)&nbsp;refers to the process by which principal components are computed, and the subsequent use of these components in understanding the data.&nbsp;<br>
 						                        <br>PCA is an unsupervised approach, since it involves only a set of features 𝑋1,𝑋2,...,𝑋𝑝, and no associated response 𝑌.
@@ -731,7 +732,7 @@
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-3">
 						                    <div class="u-container-layout u-container-layout-5">
-						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Algorithms_and_PCA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-1">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Algorithms_and_PCA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-1">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
 						                      </a>
 						                      <p class="u-large-text u-text u-text-variant u-text-5"> The code for <span style="font-weight: 700;">implementing PCA</span> by <span style="font-weight: 700;">hand</span>&nbsp;is here
 						                      </p>
@@ -915,7 +916,7 @@
 						                <div class="u-container-layout u-container-layout-1">
 						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
 						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
-						                  <div class="u-align-justify u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
 						                    <div class="u-container-layout u-container-layout-2">
 						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"> Clustering is an unsupervised machine learning technique, which partitions the entire dataset into a fixed number of clusters or groups in such a way that observations in each group exhibit similar behavior or characteristics and are homogeneous. The observations in the same group are more similar than the observations in other groups.</p>
 						                    </div>
@@ -983,10 +984,10 @@
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-6">
 						                    <div class="u-container-layout u-container-layout-8">
-						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Algorithms_and_PCA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Algorithms_and_PCA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
 						                      </a>
 						                      <p class="u-large-text u-text u-text-variant u-text-8">
-						                        <span style="font-weight: 700;">Clustering Algorithms<span style="font-weight: 400;"> for all types of data</span>
+						                        <span style="font-weight: 700;">Clustering Algorithms<span style="font-weight: 400;"> by hand in python</span>
 						                        </span>
 						                      </p>
 						                    </div>
@@ -1134,17 +1135,17 @@
 						                <div class="u-container-layout u-valign-top u-container-layout-22">
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-19">
 						                    <div class="u-container-layout u-container-layout-23">
-						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_Basic.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-4">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_Basic.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-4">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="data:image/png;base64,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" alt=""></span>
 						                      </a>
-						                      <p class="u-large-text u-text u-text-variant u-text-23">Code for Text Clustering using a <span style="font-weight: 700;">Basic technique</span>
+						                      <p class="u-large-text u-text u-text-variant u-text-23">Text Clustering using a <span style="font-weight: 700;">Basic technique</span>
 						                      </p>
 						                    </div>
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-20">
 						                    <div class="u-container-layout u-container-layout-24">
-						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_Advanced.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-5">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_Advanced.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-5">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAABl5JREFUeF7tnTmoZEUUhr9RA4NxARVHVMTAHVNxCRRBcd8CA3fRQFRkQFFwRUUDFwwEQRTcAxP3BRUUEwUTDdwFDRQMXREDN/7hPnzT0327bnfVreo5f2WPV8s5//n7LHXr3tqAW2gENoTW3spjAgQngQlgAgRHILj69gAmQHAEgqtvD2ACBEcguPr2ACZAcASCq28PYAIERyC4+vYAJkBwBIKrbw9gAgRHILj69gAmQHAEgqtvD2AChETgCOAe4NhO+w+AW4DPoqER0QMcBbwP7Dxh7D+B44GPIpEgIgHeBk6aYeR3gJNNgO0bgd+AjTNU/B3YZftWf2vtInqAf+cYOBQmoZTtDG8CrPsFmADbuoNQmIRS1h4gONtNABNACDgHcA7QWweECouhlHUIcAhwCJjggD1A8B+FCWACRNr53qKrqwBXAa4C1hBwCHAIcAiInBjbA9gD2APYA8TigKsAVwGuAlwFzOZAqLwolLJ+GBQ84zUBTABvBUcueewB7AHsAewB/DRwPQdcBQT3iiaACRBrH9gHQra2tz2APYA9QOTE2B7AHsAewB4gFgd8HsDnAXwewOcBfB5gCwJOAp0ExkoAvBHkjSAngU4CnQQ6CXQS6CRwBgdCJcahlPWRsOAlzwgEOADYHfgG+GMV6qtV8QCS8wLgcmBP4EPgPuC7BUAuUQUcCjwBHN3Jo49OPwDclVB2LqBCviGrQoDHgCsn1P4VuAR4eSAcuQlwNvA0sOsUOe4Gbh8o36jdV4EAZ/UYWcYUyHcC/yQil4sAOwB3ALf17KjqEopNwC+Jso3ebRUI8Fzn/vvAeQ24KBHoHATYDXgWOCPBYscBupKmybYKBHgPOCEBva+Bc4HP5/RdlgCHAy8CByfIpC5HAp8m9h292yoQ4H7ghkRkdBvIpZ2BZg1ZhgAi2FMDbhX5AtAFVfPWTFQvf7dVIMDewMfAPonqC2zdCKb4PC0vmGeMaZgo3ivP0M1iqZgp7uv+oaYvoUpVJhH7Yt1UZr0EHDJghde7vODniTFDCaC6XvH+9AFrfwWcA3w5YEyVrrkIMMY9fEq8ngHOHICUNmRkiPV5wRACKN6LeAcNWPNV4OLEhDR12mL45iDAmPfwpZRek6AqL7gMeKH7RyoBzgOeHBDvFylJUwhQFN8cBKhxD1/f5ss0UGWce7tNmb/noL5jt4N384B4v+imVAoBiuKbgwC17uE7rMv2h+QFbwCnzUE9pc/6KRTvVR0o4y/RiuKbgwCpLrUEOLrkUWWZDFCjiSwXApOJZk5ZiuK76gQQ0NLhxs7FK0cYo8koehilMJG6Bb2oXCZAInIq01SuqWwr2SaTypJraW4TYADC2p7VNq3KtxJNZaXCzZjXzJsAAy1ZKi8YI95PU9UEGEiA3HnBmPHeBFjA2H1Dls0Lxo73JkBmAmi6RfOCGvHeBChAAE05NC+oFe9NgEIESM0Lasd7E6AgAdamnpUXtBDvTYARCKAlDuwe+JzYbbS82x0gWeSYeWmRXQaWRrjx+U2Axg1UWjwToDTCjc9vAjRuoNLiNU8AnYZRnT2r6ZUpZdhuwxHQOci+swbCddorackr5TgPoBMxfS9J6OmZDla6DUfgfOD5nmHCXiemF245CPAmcMocIY8BflpYypgD9wA+AfbrUV87lkOOq28zVQ4CXAs8PMdG3wPXA28BChlu/SFTP6gH5xhfM1wDPLIMmDkIsH/3nr5O07qNh8Bf3YbWD8ssmYMAWv9x4IplBPHYwQg8Clw1eNTEgFwE2Lc7Ft1XDSwrq8f/j4DCqJK/H5cFJRcBJMepgF6LcihY1ir943UKWa+7CeulW04CSJjrgIeAsY5nLw3Aik0g429OSLqT1cpNAC2sT7roeLbDQbIZkjrK7eslFH0NJVsrQQAJtxdwK3A1sFM2aWNOpF+9PpNzU46YPwlhKQKsraNNDL3Iqc0KPYPX3xtj2jFZa31iTqXdt4C+cfBK93fyBEM6libAEFnctwICJkAF0Fta0gRoyRoVZDEBKoDe0pImQEvWqCCLCVAB9JaWNAFaskYFWUyACqC3tKQJ0JI1KshiAlQAvaUlTYCWrFFBFhOgAugtLWkCtGSNCrKYABVAb2lJE6Ala1SQxQSoAHpLS5oALVmjgiwmQAXQW1rSBGjJGhVkMQEqgN7Skv8BmIUVkAdyu/YAAAAASUVORK5CYII=" alt=""></span>
 						                      </a>
-						                      <p class="u-large-text u-text u-text-variant u-text-24">Text Clustering using an advanced <span style="font-weight: 700;">Industry applied</span> technique
+						                      <p class="u-large-text u-text u-text-variant u-text-24"> Text Clustering using an advanced <span style="font-weight: 700;">Industry applied</span> technique
 						                      </p>
 						                    </div>
 						                  </div>
@@ -1297,9 +1298,9 @@
 						                <div class="u-container-layout u-container-layout-35">
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-30">
 						                    <div class="u-container-layout u-container-layout-36">
-						                      <p class="u-large-text u-text u-text-variant u-text-41">Download the Text Clustering using&nbsp;<br><b>Hierarchical&nbsp;Clustering </b>in <span style="font-weight: 700;">R</span>
+						                      <p class="u-large-text u-text u-text-variant u-text-41">Text Clustering using&nbsp;<br><b>Hierarchical&nbsp;Clustering </b>in <span style="font-weight: 700;">R</span>
 						                      </p>
-						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_in_R.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-6">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-4"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_in_R.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-6">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-4"><img src="data:image/png;base64,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" alt=""></span>
 						                      </a>
 						                    </div>
 						                  </div>
@@ -1382,9 +1383,9 @@
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-4">
 						                    <div class="u-container-layout u-container-layout-6">
-						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/ARM_in_R.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/ARM_in_R.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
 						                      </a>
-						                      <p class="u-large-text u-text u-text-variant u-text-6"> The code for implementing ARM<span style="font-weight: 700;"> In R</span>&nbsp;&nbsp;could be found here
+						                      <p class="u-large-text u-text u-text-variant u-text-6"> The code for <span style="font-weight: 700;">implementing ARM</span>&nbsp;&nbsp;in R is here
 						                      </p>
 						                    </div>
 						                  </div>
@@ -1677,11 +1678,293 @@
 						  </div>
 						</div>
 						
-						<div class="features2">
-							<p>Definition!</p>
+						<!-- BODY -->
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-5" id="carousel_c6fc">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout">
+						            <div class="u-layout-row">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"><b>A decision tree is a type of predictive model that maps out possible outcomes and their likelihood based on a series of decision rules.&nbsp;</b><b>It is a tree-like structure where each internal node represents a decision based on a feature or attribute, and each leaf node represents a class label or a predicted outcome.&nbsp;</b>
+						                        <br>
+						                        <br><b>Based on Hunt’s algorithm, it could be used for Classification and Regression purposes (CART).&nbsp;</b>The Decision Tree Hunt algorithm is a widely used approach for constructing decision trees. It is a recursive algorithm that starts with the entire dataset and selects the best feature to split the data based on a criterion such as information gain, GINI index, or entropy.&nbsp;<b>
+						                          <br>
+						                          <br>The process of constructing a decision tree involves selecting the best feature or attribute to split the data at each node. There are several criteria for measuring the "goodness" of a split, such as:</b>
+						                        <br>
+						                        <br><b>- Gini gain <span style="font-weight: 400;">(<span style="font-weight: 400;">for categorical response)</span>
+						                          </span>
+						                          <br>- Information gain<span style="font-weight: 400; font-style: italic;"> (for categorical response)</span>
+						                          <br>- Chi-Squared Test <span style="font-weight: 400; font-style: italic;">(for categorical response)</span>
+						                          <br>- Reduction in Variance <span style="font-weight: 400; font-style: italic;">(for continuous response)</span></b>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;">Gini Gain<br>
+						                        </span>The Gini-gain measures the degree of impurity or randomness in a set of examples. A split is considered "good" if it leads to a significant decrease in the GINI impurity. Gini gain is measured by comparing gini impurity of parents and child nodes.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Information Gain<br>
+						                        </span>Entropy is another measure of impurity that quantifies the uncertainty in a set of examples. A split is considered "good" if it leads to a significant decrease in the entropy. Information gain is the measure of the expected reduction in entropy achieved by a split. <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Chi-Squared Test <br>
+						                        </span>Chi-square is another method of splitting nodes in a decision tree for datasets having categorical target values. It is used to make two or more splits in a node. It works on the statistical significance of differences between the parent node and child nodes.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Reduction in Variance<br>
+						                        </span>It is a method for splitting the node used when the target variable is continuous, i.e., regression problems. It is called so because it uses variance as a measure for deciding the feature on which a node is split into child nodes. Variance is used for calculating the homogeneity of a node. If a node is entirely homogeneous, then the variance is zero.<br>
+						                        <br>It is generally possible to create an infinite number of decision trees because there can be multiple ways to split the data at each node, and the order in which the features are selected, eventually leading each leaf node to be a pure node. Additionally, decision trees can have multiple levels of depth, and the number of possible trees grows exponentially with the number of features and examples in the dataset.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5">Download the <b>labelled record</b>&nbsp;<span style="font-weight: 700;">data</span>
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/processed_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-4">
+						                    <div class="u-container-layout u-container-layout-6">
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DecisionTrees.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
+						                      </a>
+						                      <p class="u-large-text u-text u-text-variant u-text-6">Code for Decision Tress in<br>Python
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-7">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-7">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-8">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-5">
+						                    <div class="u-container-layout u-valign-top u-container-layout-8">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-6">
+						                        <div class="u-container-layout u-container-layout-9">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-7" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-9"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-10"> &nbsp;Loading <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-11">
+						                        <span style="font-size: 18px;">The preprocessed dataset consisting of cleaned tweet analytics stored in a CSV format. There are couple of categorical and continuous features.</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-8">
+						                    <div class="u-container-layout u-valign-top u-container-layout-11">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-9">
+						                        <div class="u-container-layout u-container-layout-12">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-10" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-12"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-13">Train-Test <span style="font-weight: 700;">Split</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-14">
+						                        <span style="font-size: 18px;"></span>Train-test split is a common technique in machine learning that involves dividing the dataset into training and testing sets. The training set is used to train the model, while the testing set is used to evaluate its performance on unseen data. Using <span style="font-weight: 700; font-style: italic;">scikit-learn's</span> function <span style="font-style: italic;">train_test_split</span>, with a test size of 30% and shuffled dataset, train and test sets were created.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Training Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Testing Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>It is important to ensure that the training set and testing set are <span style="font-weight: 700;">disjoint</span>, meaning that there is no overlap between the two sets, because if there is overlap, the model can learn from the testing set and perform well on it, but it may not generalize well to new and unseen data.&nbsp;<br>
+						                        <br>If the model has already seen the testing data during training, its performance on the testing set will not be a reliable indicator of its generalization performance.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-11">
+						                    <div class="u-container-layout u-valign-top u-container-layout-14">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-12">
+						                        <div class="u-container-layout u-container-layout-15">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-13" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-15"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-16">Preprocessing <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-17">
+						                        <span style="font-size: 18px;"></span>
+						                        <span style="font-weight: 700; font-style: italic;">Category_encoders</span> and <span style="font-weight: 700; font-style: italic;">StandardScaler</span> are two commonly used preprocessing techniques in machine learning.<br>
+						                        <br>category_encoders and StandardScaler are important preprocessing techniques that can help to convert categorical variables into numerical ones and standardize the numerical variables, respectively, so that they can be used in machine learning models.&nbsp;<br>
+						                        <br>By using these techniques, this step aims to convert categorical features to numbers and then scale each of the feature to bring every feature on a similar scale.<br>
+						                        <br>
+						                        <span style="font-weight: 700; font-style: italic;">Category_encoders</span> are used to encode categorical variables into numerical variables that can be used in machine learning models.&nbsp;<br>
+						                        <br>
+						                        <span style="font-weight: 700; font-style: italic;">StandardScaler</span> is used to standardize numerical variables by subtracting the mean and dividing by the standard deviation.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-14">
+						                    <div class="u-container-layout u-valign-top u-container-layout-17">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-15">
+						                        <div class="u-container-layout u-container-layout-18">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-16" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-18"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-19">Modelling <span style="font-weight: 700;">Process</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-20">
+						                        <span style="font-size: 18px;"></span>In scikit-learn, <span style="font-weight: 700; font-style: italic;">DecisionTreeClassifier</span> uses either the Gini impurity or the Information Gain (also known as Entropy) criterion to measure the quality of a split in a decision tree.<br>
+						                        <br>The <span style="font-weight: 700;">Gini impurity </span>is a measure of the probability of misclassifying a randomly chosen element if it were randomly labeled according to the distribution of labels in the node.<br>
+						                        <br>The <span style="font-weight: 700;">Information Gain,</span> on the other hand, measures the reduction in entropy achieved by splitting a node. Entropy is a measure of the impurity of a set of examples.<br>
+						                        <br>For this step, the configuration was chosen after performing GridSearchCV and hyperparameters tuningIn .<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-17">
+						                    <div class="u-container-layout u-container-layout-20">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-18">
+						                        <div class="u-container-layout u-container-layout-21">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-19" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-21"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-22">Prediction <span style="font-weight: 700;">Metrics</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-23">
+						                        <span style="font-size: 18px;"></span>Classification accuracy metrics evaluate how well a classification model predicts correct class labels. Common metrics include accuracy, precision, recall, F1-score, and AUC-ROC, and the appropriate metric should be chosen based on the specific problem at hand.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Accuracy:</span> This is the most basic metric that measures the overall proportion of correctly classified examples.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Precision:</span> This metric measures the proportion of true positive predictions out of all the positive predictions made by the model. It is useful in cases where the cost of a false positive is high.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Recall:</span> This metric measures the proportion of true positive predictions out of all the actual positive examples in the dataset. It is useful in cases where the cost of a false negative is high.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">F1-score: </span>This is a balanced metric that takes into account both precision and recall. It is the harmonic mean of precision and recall and is useful in cases where both false positives and false negatives are equally important.<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-20">
+						                    <div class="u-container-layout u-valign-top u-container-layout-23">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-21">
+						                        <div class="u-container-layout u-container-layout-24">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-22" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-24"> 06</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-25">Pruning and <span style="font-weight: 700;">Final Trees</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-26">
+						                        <span style="font-size: 18px;"></span>Pruning is a technique used in decision trees to reduce overfitting and improve the generalization performance of the model. It involves removing branches from the tree that do not contribute much to the overall performance of the tree.<br>
+						                        <br>Pruning for this project was performed by analyzing max depth and comparing different versions of trees.&nbsp;<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>Final three trees could be found alongside.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Tree 1:</span> with max-depth set at 3 with Gini Impurity<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Tree 2: </span>with max-depth set at 4 with Gini Impurity<br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Tree 3:</span> with max-depth set at 3 with Information Gain<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Decision trees </span>would be employed in <span style="font-weight: 700;">tweet analytics</span> to classify tweets into various categories based on features such as like count, topic, and retweet count as displayed in this project. Such a <span style="font-style: italic; font-weight: 700;">classification</span>&nbsp;was carried out for a range of purposes, such as identifying tweets that are positive or negative based on the number of likes and retweets they receive, and if these numerical analytics could help classify these tweets.<br>
+						                        <br>Moreover, decision trees were also utilized for prediction purposes, such as predicting the number of retweets a tweet is likely to receive, based on various features, including the time of day the tweet was posted, the number of hashtags used, and the content of the tweet.&nbsp;<br>
+						                        <br>Eventually, this tree-structure <span style="font-weight: 700;">was implemented to find feature importances</span>, for development of more effective and accurate models.<br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-26">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/dctrees1.png" alt="" data-image-width="1484" data-image-height="664">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-2" src="images/dctrees2.png" alt="" data-image-width="1364" data-image-height="744">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="images/dctrees3.png" alt="" data-image-width="1364" data-image-height="744">
+						                  <img class="u-align-center u-image u-image-default u-image-4" src="images/dctrees4.png" alt="" data-image-width="692" data-image-height="452">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/dctrees5.png" alt="" data-image-width="692" data-image-height="452">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-6" src="images/dctrees6.png" alt="" data-image-width="1388" data-image-height="966">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/dctrees7.png" alt="" data-image-width="1386" data-image-height="642">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-8" src="images/dctrees8.png" alt="" data-image-width="1840" data-image-height="1084">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-9" src="images/dctrees9.png" alt="" data-image-width="1346" data-image-height="1208">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-10" src="images/dctrees9.png" alt="" data-image-width="1346" data-image-height="1208">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-11" src="images/dctrees12.png" alt="" data-image-width="1278" data-image-height="1164">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-12" src="images/dctrees11.png" alt="" data-image-width="2636" data-image-height="1004" data-href="https://github.com/pranzell/pranzell.github.io/blob/master/source/output/Tree_Record.pdf">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-13" src="images/dctrees13.png" alt="" data-image-width="2734" data-image-height="754">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-14" src="images/dctrees14.png" alt="" data-image-width="2734" data-image-height="1040">
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
 						</div>
-						
-						<p>Something exciting is coming up! Stay tuned.</p>
 					</div>
 				</section>
 				<!-- 9. DT -->
@@ -1735,11 +2018,254 @@
 						  </div>
 						</div>
 						
-						<div class="features2">
-							<p>Definition!</p>
+						<!-- BODY -->
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-6" id="carousel_850f">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"><b></b>Naive Bayes is a probabilistic algorithm that is commonly used for classification problems. It is based on Bayes' theorem, which provides a way to calculate the probability of a hypothesis given some evidence.&nbsp;<br>
+						                        <br>In Naive Bayes, a <span style="font-style: italic;">naive</span>&nbsp; assumption is assumed that the features are independent given the class label, or the continuous features follow a normal distribution.<br>
+						                        <br>Despite this simplification, Naive Bayes can be very effective in many real-world classification tasks, especially when the number of features is large and the training data is limited. Naive Bayes is commonly used in natural language processing tasks, such as spam filtering and sentiment analysis, as well as in other applications such as image recognition and medical diagnosis.<br>
+						                        <br>There are three main types of Naive Bayes classifiers:<br>
+						                        <br><b style="">- Gaussian&nbsp;<span style="font-weight: 400;">(<span style="font-weight: 400;">for </span>
+						                          </span></b>
+						                        <span style="font-weight: 400;">continuous</span><b>
+						                          <span style="font-weight: 400;">&nbsp;features)</span>
+						                          <br>- Multinomial<span style="font-weight: 400; font-style: italic;">&nbsp;(for categorical and longer text)</span>
+						                          <br>- </b>Bernoulli&nbsp;<span style="font-weight: 400;">(for shorter texts<b>
+						                            <span style="font-weight: 400; font-style: italic;">)</span></b>
+						                        </span>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;">Gaussian Naive Bayes</span>
+						                        <br>This version assumes that the features are continuous and normally distributed. It models the distribution of each feature for each class using a Gaussian (normal) distribution.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Multinomial Naive Bayes</span>
+						                        <br>This version assumes that the features are discrete and counts or frequencies. It is commonly used for text classification (this project), where each feature corresponds to the frequency of a word in a document.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Bernoulli Naive Bayes</span>
+						                        <br>This version is similar to Multinomial Naive Bayes, but it assumes that the features are binary, meaning that each feature is either present or absent in the document. It is commonly used for binary classification problems, such as sentiment analysis or spam filtering.<br>
+						                        <br>
+						                        <span style="font-weight: 700; font-style: italic;">Multinomial NB</span> is generally used for longer documents/corpus and considers the word frequencies, whereas, <span style="font-weight: 700; font-style: italic;">Bernoulli NB</span> is mostly used for shorter documents/corpuses and ignores the word count.<br>
+						                        <br>In Bernoulli Naive Bayes, the features are binary variables, which means that they can take on one of two values: 0 or 1. The algorithm calculates the probability of each feature being present in a class, and then uses Bayes' theorem to calculate the probability of the data belonging to each class.&nbsp;<br>
+						                        <br>The Bernoulli Naive Bayes algorithm is commonly used for text classification, where the features represent the presence or absence of certain words in a document. It is also used in other applications where the features are binary, such as image classification or fraud detection.<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5">Download the <b>labelled record</b>&nbsp;<span style="font-weight: 700;">data</span>
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/processed_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-4">
+						                    <div class="u-container-layout u-container-layout-6">
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/NaiveBayesClassifier.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
+						                      </a>
+						                      <p class="u-large-text u-text u-text-variant u-text-6">Code for Naive Bayes in<br>Python
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-7">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-7">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-8">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-5">
+						                    <div class="u-container-layout u-valign-top u-container-layout-8">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-6">
+						                        <div class="u-container-layout u-container-layout-9">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-7" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-9"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-10"> &nbsp;Loading <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-11">
+						                        <span style="font-size: 18px;">The preprocessed dataset consisting of cleaned and preprocessed tweets stored in a CSV format were used, along with <span style="font-weight: 700;">three</span>
+						                          <span style="font-weight: 700;">labels : cu_research, cu_online, <span style="font-weight: 400;">and</span>
+						                            <span style="font-weight: 400;"></span>cu_others.
+						                          </span>
+						                        </span>
+						                        <br>
+						                        <br>The aim is to classify these tweets under one of these classes.<br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-8">
+						                    <div class="u-container-layout u-valign-top u-container-layout-11">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-9">
+						                        <div class="u-container-layout u-container-layout-12">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-10" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-12"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-13">Train-Test <span style="font-weight: 700;">Split</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-14">
+						                        <span style="font-size: 18px;"></span>Train-test split is a common technique in machine learning that involves dividing the dataset into training and testing sets. The training set is used to train the model, while the testing set is used to evaluate its performance on unseen data. Using <span style="font-weight: 700; font-style: italic;">scikit-learn's</span> function <span style="font-style: italic;">train_test_split</span>, with a test size of 30% and shuffled dataset, train and test sets were created.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Training Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Testing Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>It is important to ensure that the training set and testing set are <span style="font-weight: 700;">disjoint</span>, meaning that there is no overlap between the two sets, because if there is overlap, the model can learn from the testing set and perform well on it, but it may not generalize well to new and unseen data.&nbsp;<br>
+						                        <br>If the model has already seen the testing data during training, its performance on the testing set will not be a reliable indicator of its generalization performance.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-11">
+						                    <div class="u-container-layout u-valign-top u-container-layout-14">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-12">
+						                        <div class="u-container-layout u-container-layout-15">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-13" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-15"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-16">Preprocessing <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-17">For Naive Bayes classification, <span style="font-weight: 700; font-style: italic;">vectorization</span> refers to the process of transforming textual data into numerical vectors that can be processed by machine learning algorithms.<br>
+						                        <br>Naive Bayes requires numerical input data, so text data must first be transformed into numerical vectors before it can be used with Naive Bayes.<br>
+						                        <br>For the scope of this project, <span style="font-weight: 700; font-style: italic;">Count Vectorizer </span>was used to transform tweets into frequency word vectors. Count Vectorizer is a type of Bag-of-Words model that represents each document as a vector of word frequencies.<br>
+						                        <br>By generating a document-term matrix that represents each document as a vector of word frequencies, the tweets were vectorized and used for Naive Bayes algorithm.<br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-14">
+						                    <div class="u-container-layout u-valign-top u-container-layout-17">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-15">
+						                        <div class="u-container-layout u-container-layout-18">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-16" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-18"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-19">Modelling <span style="font-weight: 700;">Process</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-20">
+						                        <span style="font-size: 18px;"></span>Multinomial Naive Bayes is a variant of the Naive Bayes algorithm that is commonly used for <span style="font-weight: 700;">text classification</span>. It is specifically designed for text data where the features are typically word frequencies or counts. In Multinomial Naive Bayes, each document is represented as a bag of words or a vector of word counts, and each class is represented by the distribution of word counts or frequencies for that class. The algorithm calculates the probability of a new document belonging to each class using<span style="font-weight: 700; font-style: italic;"> Bayes' theorem </span>and the assumption that the word counts are independent given the class label.<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-17">
+						                    <div class="u-container-layout u-container-layout-20">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-18">
+						                        <div class="u-container-layout u-container-layout-21">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-19" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-21"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-22">Prediction <span style="font-weight: 700;">Metrics</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-23">
+						                        <span style="font-size: 18px;"></span>Classification accuracy metrics revealed decent accuracy on predicting test tweets under one of three class labels.&nbsp; Common metrics include accuracy, precision, recall, F1-score, and AUC-ROC, and the appropriate metric should be chosen based on the specific problem at hand.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Accuracy:</span> This is the most basic metric that measures the overall proportion of correctly classified examples.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Precision:</span> This metric measures the proportion of true positive predictions out of all the positive predictions made by the model. It is useful in cases where the cost of a false positive is high.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Recall:</span> This metric measures the proportion of true positive predictions out of all the actual positive examples in the dataset. It is useful in cases where the cost of a false negative is high.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">F1-score: </span>This is a balanced metric that takes into account both precision and recall. It is the harmonic mean of precision and recall and is useful in cases where both false positives and false negatives are equally important.<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-20">
+						                    <div class="u-container-layout u-valign-top u-container-layout-23">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-21">
+						                        <div class="u-container-layout u-container-layout-24">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-22" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-24"> 06</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-25">Final<span style="font-weight: 700;"> Text Classifier</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-26">
+						                        <span style="font-size: 18px;"></span>The trained Multinomial Naive Bayes was used to test couple of unseen tweets created on the fly to test model's classification performance.&nbsp;The model seemed to perform decently well, with a precision of 89%, and F1 score of 88%.&nbsp;&nbsp;<br>
+						                        <br>The basic idea behind using Naive Bayes for tweet classification was the validity of its assumption, since each tweet was independent of other.&nbsp;<br>
+						                        <br>The algorithm estimated the conditional probability of each class (i.e. cu_research, cu_online and cu_others) given the presence or absence of each word in the tweet. The class with the highest probability is then assigned to the tweet.<br>
+						                        <br>Following advantages were exploited:<br>- Handling high-dimensional data: Twitter data had a large number of features (words) and&nbsp; Naive Bayes was quite well-suited.<br>
+						                        <br>- Robust to noise: Twitter data was quite noisy, with misspellings, abbreviations, and other non-standard language, and Naive Bayes was robust to such noise, as it estimates the probabilities of each class based on the presence or absence of each feature, rather than relying on the exact wording of each tweet.<br>
+						                        <br>- Fast and scalable: Naive Bayes was quite fast to execute and performed very well with decent accuracy.<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-26">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/nab1.png" alt="" data-image-width="1554" data-image-height="1072">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-2" src="images/nab2.png" alt="" data-image-width="1118" data-image-height="926">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="images/nab3.png" alt="" data-image-width="1118" data-image-height="926">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-4" src="images/nab4.png" alt="" data-image-width="1286" data-image-height="1190">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/nab5.png" alt="" data-image-width="1150" data-image-height="318">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-6" src="images/nab6.png" alt="" data-image-width="1160" data-image-height="956">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/nab7.png" alt="" data-image-width="1270" data-image-height="234">
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
 						</div>
-						
-						<p>Something exciting is coming up! Stay tuned.</p>
 						
 					</div>
 				</section>

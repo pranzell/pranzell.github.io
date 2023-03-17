@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<user_followersCount &le; -0.234<br/>gini = 0.468<br/>samples = 2375<br/>value = [584, 168, 1623]<br/>class = cu_research>, fillcolor="#b68cf0"] ;
+1 [label=<user_followersCount &le; -0.236<br/>gini = 0.529<br/>samples = 1410<br/>value = [441, 116, 853]<br/>class = cu_research>, fillcolor="#c9abf4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<likeCount &le; -0.193<br/>gini = 0.514<br/>samples = 1349<br/>value = [382, 116, 851]<br/>class = cu_research>, fillcolor="#c29ff2"] ;
+1 -> 2 ;
+3 [label=<gini = 0.559<br/>samples = 878<br/>value = [305, 83, 490]<br/>class = cu_research>, fillcolor="#d6bff7"] ;
+2 -> 3 ;
+4 [label=<gini = 0.381<br/>samples = 471<br/>value = [77, 33, 361]<br/>class = cu_research>, fillcolor="#a470ec"] ;
+2 -> 4 ;
+5 [label=<chr_count &le; 1.012<br/>gini = 0.063<br/>samples = 61<br/>value = [59, 0, 2]<br/>class = cu_online>, fillcolor="#e68540"] ;
+1 -> 5 ;
+6 [label=<gini = 0.033<br/>samples = 60<br/>value = [59, 0, 1]<br/>class = cu_online>, fillcolor="#e5833c"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = cu_research>, fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label=<user_followersCount &le; 0.335<br/>gini = 0.338<br/>samples = 965<br/>value = [143, 52, 770]<br/>class = cu_research>, fillcolor="#9f68eb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<verifiedStatus &le; 0.622<br/>gini = 0.257<br/>samples = 684<br/>value = [86, 15, 583]<br/>class = cu_research>, fillcolor="#965ae9"] ;
+8 -> 9 ;
+10 [label=<gini = 0.335<br/>samples = 405<br/>value = [68, 14, 323]<br/>class = cu_research>, fillcolor="#a069eb"] ;
+9 -> 10 ;
+11 [label=<gini = 0.127<br/>samples = 279<br/>value = [18, 1, 260]<br/>class = cu_research>, fillcolor="#8a47e7"] ;
+9 -> 11 ;
+12 [label=<user_followersCount &le; 1.423<br/>gini = 0.499<br/>samples = 281<br/>value = [57, 37, 187]<br/>class = cu_research>, fillcolor="#b68cf0"] ;
+8 -> 12 ;
+13 [label=<gini = 0.657<br/>samples = 134<br/>value = [52, 34, 48]<br/>class = cu_online>, fillcolor="#fef9f6"] ;
+12 -> 13 ;
+14 [label=<gini = 0.104<br/>samples = 147<br/>value = [5, 3, 139]<br/>class = cu_research>, fillcolor="#8844e6"] ;
+12 -> 14 ;
+}
