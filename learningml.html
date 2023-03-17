@@ -165,18 +165,18 @@
 							<div class="coding">
 								<pre>
 									<code style="height: 35vh;width: 80vh;" class="python">	import os
-	import pandas as pd
-	#!pip install git+https://github.com/JustAnotherArchivist/snscrape.git
-	import snscrape.modules.twitter as sntwitter # the magic
-	# API POST message body
-	search_query = "cuboulder"
-	start_date = "2022-12-01"
-	end_date = "2022-12-03"
-	message_body = '{} since:{} until:{}'.format(search_query, start_date, end_date)
-	print(message_body)
-	# returns a generator with json response
-	historical_metadata_raw = sntwitter.TwitterSearchScraper(message_body).get_items()
-	historical_metadata = [tweet for tweet in historical_metadata_raw]</code>
+				import pandas as pd
+				#!pip install git+https://github.com/JustAnotherArchivist/snscrape.git
+				import snscrape.modules.twitter as sntwitter # the magic
+				# API POST message body
+				search_query = "cuboulder"
+				start_date = "2022-12-01"
+				end_date = "2022-12-03"
+				message_body = '{} since:{} until:{}'.format(search_query, start_date, end_date)
+				print(message_body)
+				# returns a generator with json response
+				historical_metadata_raw = sntwitter.TwitterSearchScraper(message_body).get_items()
+				historical_metadata = [tweet for tweet in historical_metadata_raw]</code>
 								</pre>
 							</div>
 							<div style="margin-top: 5em">
@@ -269,14 +269,14 @@
 							                <div class="u-container-layout u-container-layout-5">
 							                  <p class="u-large-text u-text u-text-variant u-text-5">Download the <span style="font-weight: 700;">raw dataset</span>
 							                  </p>
-							                  <a href="https://github" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/raw_cuboulder_Intents_TwitterData_2020_02_05_2022-12-31.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
 							                </div>
 							              </div>
 							              <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-4">
 							                <div class="u-container-layout u-container-layout-6">
 							                  <p class="u-large-text u-text u-text-variant u-text-6">Download the <span style="font-weight: 700;">processed</span>&nbsp;<span style="font-weight: 700;">dataset</span>
 							                  </p>
-							                  <a href="https://github" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-2">DOWNLOAD</a>
+							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/processed_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-2">DOWNLOAD</a>
 							                </div>
 							              </div>
 							              <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-5">
@@ -285,7 +285,7 @@
 							                    <span style="font-weight: 700;">EDA <span style="font-weight: 400;">and</span> Preprocessing
 							                    </span>&nbsp;code can be found here
 							                  </p>
-							                  <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-3">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-3">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
 							                  </a>
 							                </div>
 							              </div>
@@ -653,7 +653,7 @@
 							                    <span style="font-weight: 700;">EDA <span style="font-weight: 400;">and</span> Preprocessing
 							                    </span>&nbsp;code can be found here
 							                  </p>
-							                  <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-10">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
+							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataPreprocessing_EDA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-10">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
 							                  </a>
 							                </div>
 							              </div>
@@ -661,7 +661,7 @@
 							                <div class="u-container-layout u-container-layout-35">
 							                  <p class="u-large-text u-text u-text-variant u-text-35"> Code for&nbsp;<span style="font-weight: 700;">data&nbsp;vectorization</span>&nbsp;is here
 							                  </p>
-							                  <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-11">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
+							                  <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/DataVectorization.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-11">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
 							                  </a>
 							                </div>
 							              </div>
@@ -731,7 +731,7 @@
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-3">
 						                    <div class="u-container-layout u-container-layout-5">
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-1">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Algorithms_PCA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-1">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
 						                      </a>
 						                      <p class="u-large-text u-text u-text-variant u-text-5"> The code for <span style="font-weight: 700;">implementing PCA</span> by <span style="font-weight: 700;">hand</span>&nbsp;is here
 						                      </p>
@@ -983,10 +983,10 @@
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-6">
 						                    <div class="u-container-layout u-container-layout-8">
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Algorithms_PCA.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
 						                      </a>
 						                      <p class="u-large-text u-text u-text-variant u-text-8">
-						                        <span style="font-weight: 700;">Clustering Algorithms<span style="font-weight: 400;"> by hand in python</span>
+						                        <span style="font-weight: 700;">Clustering Algorithms<span style="font-weight: 400;"> for all types of data</span>
 						                        </span>
 						                      </p>
 						                    </div>
@@ -1134,17 +1134,17 @@
 						                <div class="u-container-layout u-valign-top u-container-layout-22">
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-19">
 						                    <div class="u-container-layout u-container-layout-23">
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-4">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_Basic.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-4">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/2989976-140cd4a0.png" alt=""></span>
 						                      </a>
-						                      <p class="u-large-text u-text u-text-variant u-text-23">Text Clustering using a <span style="font-weight: 700;">Basic technique</span>
+						                      <p class="u-large-text u-text u-text-variant u-text-23">Code for Text Clustering using a <span style="font-weight: 700;">Basic technique</span>
 						                      </p>
 						                    </div>
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-20">
 						                    <div class="u-container-layout u-container-layout-24">
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-5">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_Advanced.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-5">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2989976-140cd4a0.png" alt=""></span>
 						                      </a>
-						                      <p class="u-large-text u-text u-text-variant u-text-24"> Text Clustering using an advanced <span style="font-weight: 700;">Industry applied</span> technique
+						                      <p class="u-large-text u-text u-text-variant u-text-24">Text Clustering using an advanced <span style="font-weight: 700;">Industry applied</span> technique
 						                      </p>
 						                    </div>
 						                  </div>
@@ -1297,9 +1297,9 @@
 						                <div class="u-container-layout u-container-layout-35">
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-30">
 						                    <div class="u-container-layout u-container-layout-36">
-						                      <p class="u-large-text u-text u-text-variant u-text-41">Text Clustering using&nbsp;<br><b>Hierarchical&nbsp;Clustering </b>in <span style="font-weight: 700;">R</span>
+						                      <p class="u-large-text u-text u-text-variant u-text-41">Download the Text Clustering using&nbsp;<br><b>Hierarchical&nbsp;Clustering </b>in <span style="font-weight: 700;">R</span>
 						                      </p>
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-6">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-4"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/clustering_Text_in_R.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-6">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-4"><img src="images/2989976-140cd4a0.png" alt=""></span>
 						                      </a>
 						                    </div>
 						                  </div>
@@ -1377,14 +1377,14 @@
 						                      <p class="u-large-text u-text u-text-variant u-text-5">Download the <span style="font-weight: 700;">transactions</span>
 						                        <span style="font-weight: 700;">data</span>
 						                      </p>
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/transactions_FINAL_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
 						                    </div>
 						                  </div>
 						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-4">
 						                    <div class="u-container-layout u-container-layout-6">
-						                      <a href="https://github" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/ARM_in_R.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/2989976-140cd4a0.png" alt=""></span>
 						                      </a>
-						                      <p class="u-large-text u-text u-text-variant u-text-6"> The code for <span style="font-weight: 700;">implementing ARM</span>&nbsp;&nbsp;in R is here
+						                      <p class="u-large-text u-text u-text-variant u-text-6"> The code for implementing ARM<span style="font-weight: 700;"> In R</span>&nbsp;&nbsp;could be found here
 						                      </p>
 						                    </div>
 						                  </div>
@@ -1653,14 +1653,6 @@
 						</div>
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 8. Logistic -->
@@ -1690,14 +1682,6 @@
 						</div>
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 9. DT -->
@@ -1727,14 +1711,6 @@
 						</div>
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 10. RF -->
@@ -1765,13 +1741,6 @@
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
 						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 11. NB -->
@@ -1801,14 +1770,6 @@
 						</div>
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 12. KNN -->
@@ -1839,13 +1800,6 @@
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
 						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 13. SVM -->
@@ -1876,13 +1830,6 @@
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
 						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 14. XGB -->
@@ -1913,13 +1860,6 @@
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
 						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 15. Ensembling -->
@@ -1949,14 +1889,6 @@
 						</div>
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
-						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 16. Neural Networks: I -->
@@ -1987,13 +1919,6 @@
 						
 						<p>Something exciting is coming up! Stay tuned.</p>
 						
-						<div class="coding">
-							<pre>
-								<code class="python">
-	Some Code!
-								</code>
-							</pre>
-						</div>
 					</div>
 				</section>
 				<!-- 17. Neural Networks: II -->
@@ -2024,21 +1949,13 @@
 
 		</div>
 
-		<!-- Scripts -->
+		<!-- Javascript Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/main_page2.js"></script>
-		
-		<!--
-		<script src="assets/jquery/jquery.min.js"></script>
-		<script src="assets/jquery/jquery-migrate.min.js"></script>
-		<script src="assets/easing/easing.min.js"></script>
-		<script src="assets/js/main2.js"></script>
-		<script src="assets/js/util.js"></script>-->
-		
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 		<script src="assets/counterup/jquery.waypoints.min.js"></script>
 		<script src="assets/counterup/jquery.counterup.js"></script>
