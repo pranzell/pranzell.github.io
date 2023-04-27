@@ -59,14 +59,15 @@
 						<li><a href="#section1" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Requirements</a></li>
 						<li><a href="#section2" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Data Collection</a></li>
 						<li><a href="#section3" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Preprocessing & EDA</a></li>
-						<li><a href="#section4" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">USL: PCA & tSNE</a></li>
-						<li><a href="#section5" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">USL: Clustering</a></li>
-						<li><a href="#section6" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">USL: ARM</a></li>
-						<li><a href="#section7" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">SL: Decision Trees</a></li>
-						<li><a href="#section8" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">SL: Naive Bayes</a></li>
-						<li><a href="#section9" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">SL: SVM</a></li>
-						<li><a href="#section10" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">NN</a></li>
-						<li><a href="#section11" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Resources</a></li>
+						<li><a href="#section4" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">PCA & tSNE</a></li>
+						<li><a href="#section5" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Clustering</a></li>
+						<li><a href="#section6" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">ARM</a></li>
+						<li><a href="#section7" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Decision Trees</a></li>
+						<li><a href="#section8" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Naive Bayes</a></li>
+						<li><a href="#section9" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">SVM</a></li>
+						<li><a href="#section10" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Regression</a></li>
+						<li><a href="#section11" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Neural Networks</a></li>
+						<li><a href="#section12" style="font-size: 0.68em; letter-spacing: 0.20em; line-height: 0.80; padding: 1.00em 0;">Resources</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -2409,10 +2410,10 @@
 				</section>
 				<!-- 9. SVM -->
 
-				<!-- 10. Neural Networks -->
+				<!-- 10. Regression -->
 				<section id="section10" class="wrapper style10 fade-up">
 					<div class="inner">
-						<h2 class="title-left2">Artificial Neural Networks</h2>
+						<h2 class="title-left2">Linear Regression</h2>
 						
 						<div id='detailsbox'>
 						  <div class='boxitem'>
@@ -2429,18 +2430,453 @@
 						  </div>
 						</div>
 						
-						<div class="features2">
-							<p>Definition!</p>
+						<!-- BODY -->
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-6" id="carousel_850f">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"><b></b>Linear regression is a statistical method used for predictive analysis in machine learning, in order to model the relationship between a dependent variable and one or more independent variables. It is one of the simplest and intuitive regression techniques which has wide applications in data science and statistical analysis. It comes from a family of Generalized Linear Modelling where the response and the residual errors are assumed to have a Gaussian Distribution. <br><br>Primarily Linear regression are of two types: (1) Simple Linear Regression and (2) Multiple Linear Regression. In simple linear regression, we try to find the best fit line that can describe the relationship between a dependent variable (aka Response or Target) and one independent variable (aka Predictor or Feature). The equation of the line can be expressed as:<br><br>Response (Y) = Intercept + Slope x Feature (X)<br><br>The goal of Simple Linear Regression is to find the values of Intercept and Slope terms that minimize the difference between the predicted values and the actual values of the dependent variable. This is achieved by using a cost function such as the mean squared error (MSE), which measures the difference between the predicted values and the actual values, and tries to optimize the cost function on this difference.
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+						                        <span style="font-weight: 700;">Cost function</span>
+						                        <br>Cost function is a function that measures how well the model is fitting the training data. The goal of training a linear regression model is to minimize the value of the cost function. The most common cost function used in linear regression is the mean squared error (MSE), which is calculated as the average of the squared difference between the predicted values and the actual values of the dependent variable. 
+						                        <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Optimization Algorithms</span>
+						                        <br>
+						                        To optimize the cost function and find the best values of m and b that minimize the MSE, there are several optimization algorithms: 
+						                        <ul>
+						                        	<li>Ordinary Least Squares</li>
+						                        	<li>Maximum Likelihood Estimation</li>
+													<li>Generalized Least Squares</li>
+													<li>Weighted Least Squares</li>
+													<li>Gradient Descent (Iterative approach)</li>
+												</ul>
+												<br>
+												<span style="font-weight: 700;">Limitations of Linear Regression</span>
+						                        <ul>
+						                        	<li>There is an assumption of a linear relationship between the dependent variable and independent variable, which may not be always true for real-world use cases.</li>
+						                        	<li>It is sensitive to outliers, which can affect the performance of the model.</li>
+						                        	<li>There is an assumption of normally distributed residual terms or errors and also assumes they have a constant variance, which may not always hold true, especially, if the response is not continuous.</li>
+						                        	<li>It can be influenced by the choice of independent variables, which can affect the accuracy of the model.</li>
+						                        </ul>
+						                        <br>
+						                        <br><br>
+						                        <img src="images/lreg_1.png" alt="" style="width: 80%">
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5">Download the <b>labelled record</b>&nbsp;<span style="font-weight: 700;">data</span>
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/regression_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-4">
+						                    <div class="u-container-layout u-container-layout-6">
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/LinearRegressionR.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
+						                      </a>
+						                      <p class="u-large-text u-text u-text-variant u-text-6">Code for Linear <br>Regression in R
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-7">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-7">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-8">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-5">
+						                    <div class="u-container-layout u-valign-top u-container-layout-8">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-6">
+						                        <div class="u-container-layout u-container-layout-9">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-7" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-9"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-10"> &nbsp;Loading <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-11">
+						                        <span style="font-size: 18px;">The preprocessed dataset consisted of two continouous column variables, User's followers count in a natural log scale, and User's average click through rate for each tweet (or, popularity for each tweet) stored in a CSV format.
+						                        <br>
+						                        <br>The aim is to model a relationship and check if a User's followers count in a natural log scale could be used as a predictor to predict/model popularity for each tweet.<br>
+						                        <br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-8">
+						                    <div class="u-container-layout u-valign-top u-container-layout-11">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-9">
+						                        <div class="u-container-layout u-container-layout-12">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-10" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-12"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-13">Train-Test <span style="font-weight: 700;">Split</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-14">
+						                        <span style="font-size: 18px;"></span>Train-test split is a common technique in machine learning that involves dividing the dataset into training and testing sets. The training set is used to train the model, while the testing set is used to evaluate its performance on unseen data. Using <span style="font-weight: 700; font-style: italic;">scikit-learn's</span> function <span style="font-style: italic;">train_test_split</span>, with a test size of 30% and shuffled dataset, train and test sets were created.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Training Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <span style="font-weight: 700;">Testing Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>It is important to ensure that the training set and testing set are <span style="font-weight: 700;">disjoint</span>, meaning that there is no overlap between the two sets, because if there is overlap, the model can learn from the testing set and perform well on it, but it may not generalize well to new and unseen data.&nbsp;<br>
+						                        <br>If the model has already seen the testing data during training, its performance on the testing set will not be a reliable indicator of its generalization performance.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-11">
+						                    <div class="u-container-layout u-valign-top u-container-layout-14">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-12">
+						                        <div class="u-container-layout u-container-layout-15">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-13" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-15"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-16">Preprocessing <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-17">No missing values in any of the feature.<br><br><br>Both the feature and response seems normally distributed and follows Gaussian Curve, thus fulfilling the normality assumption.<br><br><br>As you may have noticed from the histogram of newspaper, there may be a few outliers. Let's look at some boxplots to see in further detail. Note that R classifies potential outliers by the "IQR criterion". This criterion means that all observations above  𝑞0.75+1.5×𝐼𝑄𝑅 or below  𝑞0.25−1.5×𝐼𝑄𝑅 are classified as outliers, where 𝑞0.25 is the first quartile; 𝑞0.75 is the third quartile. <br><br>IQR is the interquartile range, defined as the difference between the third and first quartile. A boxplot will "flag" the outliers. Construct a boxplot for each variable and comment on the existence of potential outliers.<br><br>Indicating User_FollowersCount_log has couple of outliers.<br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-14">
+						                    <div class="u-container-layout u-valign-top u-container-layout-17">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-15">
+						                        <div class="u-container-layout u-container-layout-18">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-16" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-18"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-19">Modelling <span style="font-weight: 700;">Process</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-20">
+						                        The simple linear regression was modelled on the Twitter Data, where the predictor was taken as the number of followers a user has and the target was chosen as the average click-through-rate or the average popularity of the tweets the user gains for each tweet.<br><br><br>For this SLR model, the project aims to reason and identify if for a given user followers count, and taking it's natural log, could the model predict the user's average popularity for a tweet, holding others variables constant.
+						                        <br><br>- As per the model summary, it's visible and the individual t-Test, the p-value is signifincalty lower than the level of signicance (alpha 0.05, two-tail t-Test), thus, we reject the Null Hypothesis which had stated that the predictor is not required, i.e. parameter of the predictor is not different than zero. Thus, it can be concluded that the predictor is essential in modelling this relationship.<br><br>- The R-Squared value is rather low indicating there could be multiple predictors which can explain the variability in the response better.<br><br>- As per the F-Test, and it's p-value, which is significantly lower than level of significance, and thus we can reject the f-Stat Null Hypothesis which had stated that the reduced model (null-model) would be sufficient to explain the variations in the data. Thus it can be concluded that, this model fits well, and the predictor is essential in modelling this relationship.<br><br><br>
+						                        The SLR best-fit line seems to do a decent job. There are a handful of outliers in the data and the ones in the later half, tend to be influential ones.For this SLR model, the project aims to reason and identify if for a given user followers count, and taking it's natural log, could the model predict the user's average popularity for a tweet, holding others variables constant.It turns out, Yes the SLR model can.<br><br><br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-20">
+						                    <div class="u-container-layout u-valign-top u-container-layout-23">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-21">
+						                        <div class="u-container-layout u-container-layout-24">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-22" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-24"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-25">Evaluation<span style="font-weight: 700;"> Metrics</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-26">
+						                        <span style="font-size: 18px;"></span>To evaluate the performance of a linear regression model, several metrics can be used, such as mean squared error (MSE), root mean squared error (RMSE), mean absolute error (MAE), and R-squared (R2).<br><br>These metrics help us to assess how well the model fits the data and how accurately it can make predictions on new, unseen data.<br><br>When making predictions using a linear regression model, it's important to distinguish between prediction and explanation. <br><br>Prediction refers to the ability of the model to accurately forecast a numerical value based on a set of input features. <br><br>Explanation, on the other hand, refers to the ability of the model to identify the relationship between the input features and the target variable, and to provide insights into why a certain prediction was made. While both prediction and explanation are important, they often require different evaluation metrics and techniques.<br><br>For example, if the goal is to make accurate predictions, we may choose to optimize the model's hyperparameters and select the best-performing features. If the goal is to provide insights into the underlying relationships between the features and the target variable, we may use techniques such as feature importance analysis or partial dependence plots.<br><br>In conclusion, the model to model the relationship between predicting a tweet's popularity using average click-through-rate with user's follower's count fits well enough with the simple LR model. However, the model needs more predictors to explain more variability in the data.<br><br>
+						                        <br><br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-26">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/lreg_2.png" alt="" data-image-width="1554" data-image-height="1072">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-2" src="images/lreg_3.png" alt="" data-image-width="1118" data-image-height="926">
+						                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-4" src="images/lreg_4.png" alt="" data-image-width="1286" data-image-height="1190" style="height: 537px;">
+
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/lreg_5.png" alt="" data-image-width="1150" data-image-height="318" style="height: 1400px; margin: 169px auto 0 25px;">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-6" src="images/lreg_7.png" alt="" data-image-width="1160" data-image-height="956" style="width: 471px; height: 430px; margin: 24px 27px 0px;">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-7" src="images/lreg_6.png" alt="" data-image-width="1160" data-image-height="956" style="width: 471px; height: 430px; margin: 24px 27px 0px;">
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
 						</div>
 						
-						<p>Something exciting is coming up! Stay tuned.</p>
 					</div>
 				</section>
-				<!-- 10. Neural Networks -->
+				<!-- 9. SVM -->
+
+				<!-- 11. Neural Networks -->
+				<section id="section11" class="wrapper style10 fade-up">
+					<div class="inner">
+						<h2 class="title-left2">Neural Networks</h2>
+						
+						<div id='detailsbox'>
+						  <div class='boxitem'>
+						  	<h4 class="boxitem-title">Published</h4>
+						    <p class="boxitem-stat">2 Feb 2023</p>
+						  </div>
+						  <div class='boxitem'>
+						  	<h4 class="boxitem-title">Read Time</h4>
+						    <p class="boxitem-stat">15 Mins</p>
+						  </div>
+						  <div class='boxitem' style="border:none;">
+						  	<h4 class="boxitem-title">Version</h4>
+						    <p class="boxitem-stat">1.0</p>
+						  </div>
+						</div>
+						
+						<!-- BODY -->
+						<div class="u-body u-xl-mode">
+							<section class="u-clearfix u-section-6" id="carousel_850f">
+						      <div class="u-clearfix u-sheet u-sheet-1">
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+						                <div class="u-container-layout u-container-layout-1">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">01</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-2">OVERVIEW</h3>
+						                  <div class="u-align-left u-border-2 u-border-palette-1-light-2 u-container-style u-gradient u-group u-radius-7 u-shape-round u-group-1">
+						                    <div class="u-container-layout u-container-layout-2">
+						                      <p class="u-custom-font u-heading-font u-text u-text-default u-text-grey-5 u-text-3"><b></b>Neural networks are a type of machine learning model that is inspired by the structure and function of the human brain. They consist of interconnected neurons that process and transmit information, with each neuron receiving input from previous layers and producing output for subsequent layers. The final layer's output is the model's predicted output based on the input it received. Neural networks are commonly used in applications such as image and speech recognition and are particularly useful for complex pattern recognition and relationship detection in large datasets. The neural network is trained by adjusting the connection weights between neurons using backpropagation to minimize the difference between predicted and actual outputs, allowing for high accuracy and generalization.<br><br>Neural networks come in different types, including feedforward, recurrent, and convolutional neural networks. Feedforward neural networks are the simplest type, where data is processed in a single direction from input to output. Recurrent neural networks, on the other hand, allow for the processing of sequential data by incorporating feedback loops that enable previous outputs to be fed back as inputs. Convolutional neural networks are specialized for processing image data and utilize convolutional layers to detect features such as edges and shapes. With ongoing advances in machine learning and hardware, neural networks are becoming increasingly sophisticated and capable of tackling even more complex problems.
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+						                <div class="u-container-layout u-container-layout-3">
+						                  <div class="u-align-justify u-container-style u-custom-color-1 u-group u-group-2">
+						                    <div class="u-container-layout u-container-layout-4">
+						                      <p class="u-heading-font u-text u-text-default u-text-4">
+
+						                        <span style="font-weight: 700;">Types of Neural Networks</span>
+						                        <br>
+						                        Neural networks can be grouped into different categories based on their structure and function. The feedforward neural network is the most basic type, with multiple layers of interconnected neurons that process data from input to output in a single direction. Each neuron in a feedforward neural network is linked to every neuron in the subsequent layer, with the output of each neuron in one layer serving as input for the next. Feedforward neural networks are widely used for tasks such as image classification and speech recognition, and their straightforward architecture makes them easy to train.<br><br>Another type of neural network is the recurrent neural network (RNN), which is tailored for sequential data processing, such as time series and natural language. RNNs differ from feedforward neural networks in that they have feedback loops that enable previous outputs to be used as inputs. This feature permits RNNs to capture temporal information and model complex input-output relationships over time. Nonetheless, RNNs can be challenging to train, and they suffer from the vanishing gradient issue that limits their ability to model long-term dependencies. To tackle this problem, specialized types of recurrent networks, such as Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRU), have been developed that employ dedicated neurons to handle long-term dependencies better.
+						                        <br><br><br>
+						                        <img src="images/nn0.jpg" alt="" style="width: 80%">
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-3 u-group u-group-3">
+						                    <div class="u-container-layout u-container-layout-5">
+						                      <p class="u-large-text u-text u-text-variant u-text-5">Download the <b>labelled record</b>&nbsp;<span style="font-weight: 700;">data</span>
+						                      </p>
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/data/ann_processed_cuboulder_TwitterData.csv" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-10 u-hover-palette-1-light-3 u-radius-29 u-btn-1">DOWNLOAD</a>
+						                    </div>
+						                  </div>
+						                  <div class="u-align-justify u-container-style u-custom-color-7 u-group u-group-4">
+						                    <div class="u-container-layout u-container-layout-6">
+						                      <a href="https://github.com/pranzell/pranzell.github.io/blob/master/source/modules/NNClassifier.ipynb" class="u-align-center u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-3-base u-btn-2">Get code&nbsp;<span class="u-file-icon u-icon u-text-black u-icon-1"><img src="data:image/png;base64,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" alt=""></span>
+						                      </a>
+						                      <p class="u-large-text u-text u-text-variant u-text-6">Code for NN Classifier in<br>Python
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+
+						        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+						          <div class="u-gutter-0 u-layout" style="">
+						            <div class="u-layout-row" style="">
+						              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-3">
+						                <div class="u-container-layout u-container-layout-7">
+						                  <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-7">02</h1>
+						                  <h3 class="u-custom-font u-font-montserrat u-text u-text-8">process</h3>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-5">
+						                    <div class="u-container-layout u-valign-top u-container-layout-8">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-6">
+						                        <div class="u-container-layout u-container-layout-9">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-7" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-9"> 01</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-10"> &nbsp;Loading <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-11">
+						                        <span style="font-size: 18px;">The preprocessed dataset consisting of cleaned and preprocessed tweets stored in a CSV format were used, along with two labels : Non_Research and Research. A binary classification problem.
+						                        </span>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-8">
+						                    <div class="u-container-layout u-valign-top u-container-layout-11">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-9">
+						                        <div class="u-container-layout u-container-layout-12">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-10" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-12"> 02</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-13">Train-Test <span style="font-weight: 700;">Split</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-14">
+						                        <span style="font-size: 18px;"></span>Train-test split is a common technique in machine learning that involves dividing the dataset into training and testing sets. The training set is used to train the model, while the testing set is used to evaluate its performance on unseen data. Using <span style="font-weight: 700; font-style: italic;">scikit-learn's</span> function <span style="font-style: italic;">train_test_split</span>, with a test size of 30% and shuffled dataset, train and test sets were created.<br>
+						                        <br>
+						                        <span style="font-weight: 700;">Training Set</span>
+						                        <br>
+						                        <span style="font-weight: 700;">Testing Set</span>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>
+						                        <br>It is important to ensure that the training set and testing set are <span style="font-weight: 700;">disjoint</span>, meaning that there is no overlap between the two sets, because if there is overlap, the model can learn from the testing set and perform well on it, but it may not generalize well to new and unseen data.&nbsp;<br>
+						                        <br>If the model has already seen the testing data during training, its performance on the testing set will not be a reliable indicator of its generalization performance.&nbsp;<br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-11">
+						                    <div class="u-container-layout u-valign-top u-container-layout-14">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-12">
+						                        <div class="u-container-layout u-container-layout-15">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-13" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-15"> 03</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-16">Preprocessing <span style="font-weight: 700;">Data</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-17">
+						                      	For Neural Networks, first the training and testing data consisted of vecotrized text. Vecotrization was achieved using Count Vectorizer for simplicity.<br><br>
+						                      	SVD was performed to reduced dimensions of the vectorized data. The final shape of training data was restricted to 5 dimensions.<br><br>
+						                      	The labels were also label-encoded to 0 and 1 so that the NN can consume these.<br><br>
+						                      	NNs are supervised learning algorithms, which means that they require labeled data for training the model. NNs learn to classify new data points based on the labeled data they are trained on, and predict a label, in this case a binnary classification. <br><br>The features must be numeric because the kernel function and optimization algorithm used rely on the ability to calculate distances and similarities between data points. If the features are not numeric, they must be transformed into numeric values like in this case, tweets were vectorized.<br>
+						                        <br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-14">
+						                    <div class="u-container-layout u-valign-top u-container-layout-17">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-15">
+						                        <div class="u-container-layout u-container-layout-18">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-16" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout u-valign-middle">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-18"> 04</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-19">Modelling <span style="font-weight: 700;">Process</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-20">
+						                        The neural network chosen for this binary classification problem consisted of 5 input neurons (X), one hidden layer with 3 neurons, and RELU activation function, followed by a output layer with one nueron and Sigmoid function as an activation. A very simple network is chosen to facilitate coding by hand, and it could be assumed it wouldn't be performing well on this textual data analysis task.<br><br>The Input layer consists of 5 nodes representing the reduced dimensions of textual input vector.<br><br>The hidden layer consists of 3 neurons, and one activation function (Relu). Its a dense network so all inputs are connected to all the weights.<br><br>The output and final layer consists of one neuron which will ouput a probability. If this probability is less than 0.5, the final predicted label would be classified as 1, else 0. The activation function used to make this possible is the Sigmoid function.<br><br>Hand Drawn Architecture<br><br>The labels have been encoded into 0 and 1.
+						                      </p>
+						                    </div>
+						                  </div>
+						                  <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-20">
+						                    <div class="u-container-layout u-valign-top u-container-layout-23">
+						                      <div class="u-container-style u-expanded-width u-gradient u-group u-radius-16 u-shape-round u-group-21">
+						                        <div class="u-container-layout u-container-layout-24">
+						                          <div class="u-align-center u-container-style u-group u-radius-50 u-shape-round u-white u-group-22" data-animation-name="rollIn" data-animation-duration="2000" data-animation-direction="">
+						                            <div class="u-container-layout">
+						                              <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-2-base u-text-24"> 05</h2>
+						                            </div>
+						                          </div>
+						                          <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-25">Final<span style="font-weight: 700;"> Model</span>
+						                          </p>
+						                        </div>
+						                      </div>
+						                      <p class="u-custom-font u-heading-font u-text u-text-26">
+						                        Binary tweet classification involves classifying a tweet as either positive or negative. This type of classification is commonly used in sentiment analysis, where the goal is to determine the sentiment expressed in a given text. Neural networks can be effectively used for binary tweet classification, with various architectures and approaches available for this task. <br><br>The first step in using neural networks for the proposed binary tweet classification was data preparation. This involved  preprocessing the input text and output labels in array formats.<br><br> Next, the text data was converted into numerical vectors using Count vectorizer, and to reduced text in a high-dimensional vector, SVD was performed. <br><br><br><br>After data preparation, the next step was to define the neural network architecture. The fully connected layers were then trained using 150 epochs, shown alongside.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Since the network is extremely simple, its not able to detect the classification properly which is evident from the confusion matrix.<br><br><br><br><br><br><br><br><br><br>The training and testing confusion matrices have been depicted alongside. Since the Network is extremely simple, it is as expected failing to capture semantics for classification, and thus not very good results.<br><br><br><br>Though the network performs well on other dummy datasets.<br><br><br><br><br>As I worked on this project involving binary classification I leared ad revised codig back-propogation by hand. Through this project, I gained knowledge on how to preprocess data, select appropriate features, choose a suitable neural network architecture, and fine-tune model parameters. This project provided me with a solid foundation for understanding and implementing machine learning algorithms in real-world scenarios.
+						                        <br><br>
+						                      </p>
+						                    </div>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+						                <div class="u-container-layout u-container-layout-26">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-1" src="images/nn1.png" alt="" data-image-width="1554" data-image-height="1072">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-2" src="images/nn2.png" alt="" data-image-width="1118" data-image-height="926">
+						                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						                  <br>
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="images/nn3.png" alt="" data-image-width="1118" data-image-height="926">
+						                  <br><br><br><br><br><br><br><br>
+
+
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-4" src="images/nn4.jpg" alt="" data-image-width="1286" data-image-height="1190" style="height: 537px;">
+
+
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/nn6.jpg" alt="" data-image-width="1150" data-image-height="318" style="height: 1400px; margin: 169px auto 0 25px;">
+						                  <img class="u-align-center u-image u-image-contain u-image-default u-image-5" src="images/nn7.jpg" alt="" data-image-width="1150" data-image-height="318" style="height: 800px; margin: 169px auto 0 25px;">
+						                </div>
+						              </div>
+						            </div>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
+						</div>
+						
+					</div>
+				</section>
+				<!-- 11. Neural Networks -->
 			<!---------- Topics ---------->
 
 			<!---------- III. End Note ---------->
-				<section id="section11" style="height: 80vh; background-color: #212529; color: white;" class="wrapper style10 fade-up">
+				<section id="section12" style="height: 80vh; background-color: #212529; color: white;" class="wrapper style10 fade-up">
 	                <!-- Details -->
 					<div class="inner">
 						<h2 style="color: white;" class="title-left2">Resources</h2>
