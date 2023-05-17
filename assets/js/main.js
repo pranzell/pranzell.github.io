@@ -1,10 +1,10 @@
 /*
 	-------------------------------------------------------------
+	Pranjal Pathak Portfolio hosted on GitHub, Inc.
+	
 	GNU GENERAL PUBLIC LICENSE
-	CO.: PRANJAL PATHAK
-	Version 5.9, 28 Dec 2022
+	Version 3, 29 June 2007
 	Copyright (C). 2007 Free Software Foundation, Inc.
-	- The above details should be cited while copying contents.
 	-------------------------------------------------------------
 */
 

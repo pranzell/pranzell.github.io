@@ -1,8 +1,8 @@
-## Hey there! ##
+## Hey! ##
 
-So I've had the wireframe for this particular portfolio design but with all work stuff, I wasn't able to draft this. I took the time-off before going back to school, and finished this in a month. It's not close to being perfect, some responsive elements are stuck. But, it's ready. Hope you dig it :)
+So I've had the wireframe for this particular portfolio design but with all work stuff, I wasn't able to draft this. Now, it's ready. Hope you dig it :)
 
-Check out my website: **https://pranzell.github.io/**
+Check out: **https://pranzell.github.io/**
 
 Credits:
 
