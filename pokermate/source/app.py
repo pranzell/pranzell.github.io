@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import numpy as np
 from PIL import Image, ImageDraw
-from IPython.display import Image as ImageDisplay
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import cv2
