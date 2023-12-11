@@ -1,19 +1,17 @@
 import os
-import pandas as pd
-import numpy as np
-from PIL import Image, ImageDraw
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import cv2
+import io
+print(1)
 from pathlib import Path
 from ultralytics import YOLO
+print(2)
 from PIL import Image
-import io
+print(3)
 from treys import Card
 from treys import Evaluator
+print(4)
 import streamlit as st
-import requests
-import time
+print(5)
+
 
 ############################################################
 # CONFIG
@@ -23,8 +21,7 @@ MODEL_FP        = './models/pokermate_stage2_yolo8.pt'
 ############################################################
 
 # Create a folder to store uploaded images
-if not os.path.exists(UPLOAD_FOLDER):
-    os.makedirs(UPLOAD_FOLDER)
+if not os.path.exists(UPLOAD_FOLDER): os.makedirs(UPLOAD_FOLDER)
 
 def display_sidebar():
     st.sidebar.write("")
@@ -166,8 +163,8 @@ def main():
 
 if __name__ == "__main__":
     print("Starting PokerMate V1...\n\n")
-    
     # Loading fine-tuned model
     model = YOLO(MODEL_FP)
-    
     main()
+
+# EOF
