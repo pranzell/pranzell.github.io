@@ -7,7 +7,7 @@ So I've had the wireframe for this particular portfolio design but with all work
 
 Check out: **https://pranzell.github.io/**
 
-Credits:
+## Credits:
 
 	Demo Images: Unsplash (unsplash.com)
 
